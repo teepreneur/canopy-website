@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy — Digital Safety Under the Family Tree</title>
+  <meta name="description" content="Canopy helps families build healthy digital habits. Monitor activity, manage screen time, and keep children safe online — all under one protective canopy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='12' r='10' fill='%231B5E43'/><circle cx='12' cy='10' r='7' fill='%2374B49B'/><circle cx='20' cy='10' r='7' fill='%2374B49B'/><rect x='15' y='18' width='2' height='8' rx='1' fill='%23A0845C'/><circle cx='16' cy='24' r='2' fill='%23E8A838'/></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo" aria-label="Canopy home">
+        <svg class="nav__logo-icon" viewBox="0 0 40 40" width="36" height="36">
+          <circle cx="20" cy="14" r="12" fill="#1B5E43"/>
+          <circle cx="14" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
+          <circle cx="26" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
+          <circle cx="20" cy="10" r="6" fill="#1B5E43" opacity="0.7"/>
+          <rect x="18.5" y="22" width="3" height="10" rx="1.5" fill="#A0845C"/>
+          <circle cx="20" cy="30" r="2.5" fill="#E8A838" opacity="0.8"/>
+        </svg>
+        <span class="nav__wordmark">canopy</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+        <li><a href="#download" class="nav__cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__parallax-bg">
+      <div class="hero__clouds">
+        <div class="cloud cloud--1"></div>
+        <div class="cloud cloud--2"></div>
+        <div class="cloud cloud--3"></div>
+      </div>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__title-line">Safety grows</span>
+          <span class="hero__title-line hero__title-line--accent">under the canopy</span>
+        </h1>
+        <p class="hero__subtitle">
+          Give your family the shelter of smart digital protection.
+          Monitor activity, guide screen time, and nurture healthy habits —
+          while letting them explore and grow.
+        </p>
+        <div class="hero__actions">
+          <a href="#download" class="btn btn--primary btn--lg">Start Free Trial</a>
+          <a href="#how-it-works" class="btn btn--ghost btn--lg">See How It Works</a>
+        </div>
+      </div>
+
+      <div class="hero__scene">
+        <!-- The Canopy Tree SVG -->
+        <svg class="hero__tree" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated canopy tree with family beneath it">
+          <!-- Ground -->
+          <ellipse cx="400" cy="650" rx="350" ry="30" fill="#74B49B" opacity="0.3"/>
+          <ellipse cx="400" cy="655" rx="300" ry="20" fill="#74B49B" opacity="0.2"/>
+
+          <!-- Grass tufts -->
+          <g class="grass" fill="#74B49B" opacity="0.5">
+            <path d="M120 640 Q125 620 130 640"/>
+            <path d="M135 642 Q140 625 145 642"/>
+            <path d="M200 645 Q205 628 210 645"/>
+            <path d="M550 642 Q555 622 560 642"/>
+            <path d="M600 644 Q605 630 610 644"/>
+            <path d="M620 642 Q625 626 630 642"/>
+            <path d="M300 648 Q305 635 310 648"/>
+            <path d="M480 646 Q485 632 490 646"/>
+          </g>
+
+          <!-- Tree trunk -->
+          <g class="tree-trunk">
+            <path d="M370 420 Q365 500 355 580 Q350 620 345 650 L365 655 Q375 620 380 580 L420 580 Q425 620 435 655 L455 650 Q445 620 440 580 Q435 500 430 420 Z" fill="#A0845C"/>
+            <path d="M380 440 Q382 500 384 560 L390 560 Q388 500 386 440 Z" fill="#8B7348" opacity="0.3"/>
+            <path d="M410 450 Q412 510 414 570 L418 570 Q416 510 414 450 Z" fill="#8B7348" opacity="0.2"/>
+            <!-- Roots -->
+            <path d="M345 650 Q320 660 300 658" stroke="#A0845C" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M455 650 Q480 660 500 655" stroke="#A0845C" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M350 648 Q335 665 325 668" stroke="#A0845C" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- Swing ropes -->
+          <g class="swing">
+            <line x1="360" y1="320" x2="340" y2="560" stroke="#A0845C" stroke-width="2.5" opacity="0.8"/>
+            <line x1="390" y1="320" x2="370" y2="560" stroke="#A0845C" stroke-width="2.5" opacity="0.8"/>
+            <!-- Swing seat -->
+            <rect x="332" y="558" width="46" height="6" rx="3" fill="#E8A838"/>
+            <!-- Child on swing -->
+            <g class="swing-child" transform="translate(355, 530)">
+              <circle cx="0" cy="-10" r="8" fill="#F2D5C4"/>
+              <path d="M-6 0 Q0 15 6 0" fill="#74B49B"/>
+              <path d="M-4 -14 Q0 -18 4 -14" fill="#5A3825" opacity="0.8"/>
+              <circle cx="-3" cy="-11" r="1" fill="#2A3130"/>
+              <circle cx="3" cy="-11" r="1" fill="#2A3130"/>
+              <path d="M-2 -7 Q0 -5 2 -7" stroke="#D4654A" stroke-width="0.8" fill="none"/>
+            </g>
+          </g>
+
+          <!-- Canopy layers (back to front for depth) -->
+          <g class="canopy">
+            <!-- Shadow layer -->
+            <ellipse cx="400" cy="260" rx="260" ry="150" fill="#16523B" opacity="0.3" class="canopy-layer canopy-layer--shadow"/>
+
+            <!-- Back layer -->
+            <ellipse cx="320" cy="220" rx="160" ry="120" fill="#16523B" class="canopy-layer canopy-layer--1"/>
+            <ellipse cx="500" cy="230" rx="150" ry="110" fill="#16523B" class="canopy-layer canopy-layer--2"/>
+            <ellipse cx="400" cy="200" rx="140" ry="100" fill="#1B5E43" class="canopy-layer canopy-layer--3"/>
+
+            <!-- Mid layer -->
+            <ellipse cx="280" cy="200" rx="120" ry="90" fill="#1B5E43" class="canopy-layer canopy-layer--4"/>
+            <ellipse cx="520" cy="210" rx="120" ry="85" fill="#1B5E43" class="canopy-layer canopy-layer--5"/>
+
+            <!-- Front layer -->
+            <ellipse cx="350" cy="190" rx="130" ry="95" fill="#74B49B" opacity="0.7" class="canopy-layer canopy-layer--6"/>
+            <ellipse cx="460" cy="195" rx="120" ry="88" fill="#74B49B" opacity="0.6" class="canopy-layer canopy-layer--7"/>
+            <ellipse cx="400" cy="180" rx="100" ry="75" fill="#74B49B" opacity="0.5" class="canopy-layer canopy-layer--8"/>
+
+            <!-- Light dapples -->
+            <circle cx="300" cy="170" r="15" fill="#E8A838" opacity="0.15" class="dapple"/>
+            <circle cx="450" cy="160" r="12" fill="#E8A838" opacity="0.12" class="dapple"/>
+            <circle cx="380" cy="200" r="18" fill="#E8A838" opacity="0.1" class="dapple"/>
+            <circle cx="500" cy="190" r="10" fill="#E8A838" opacity="0.15" class="dapple"/>
+            <circle cx="260" cy="210" r="14" fill="#E8A838" opacity="0.08" class="dapple"/>
+          </g>
+
+          <!-- Leaves falling -->
+          <g class="falling-leaves">
+            <ellipse cx="200" cy="100" rx="4" ry="2" fill="#74B49B" opacity="0.6" class="leaf leaf--1"/>
+            <ellipse cx="550" cy="80" rx="3" ry="1.5" fill="#1B5E43" opacity="0.5" class="leaf leaf--2"/>
+            <ellipse cx="350" cy="60" rx="3.5" ry="2" fill="#E8A838" opacity="0.4" class="leaf leaf--3"/>
+            <ellipse cx="650" cy="120" rx="3" ry="1.5" fill="#74B49B" opacity="0.5" class="leaf leaf--4"/>
+            <ellipse cx="150" cy="200" rx="4" ry="2" fill="#1B5E43" opacity="0.4" class="leaf leaf--5"/>
+          </g>
+
+          <!-- Bird on branch -->
+          <g class="bird" transform="translate(520, 150)">
+            <ellipse cx="0" cy="0" rx="8" ry="6" fill="#E8A838"/>
+            <circle cx="-6" cy="-3" r="4" fill="#E8A838"/>
+            <circle cx="-7" cy="-4" r="1.2" fill="#2A3130"/>
+            <path d="M-10 -3 L-14 -2 L-10 -1" fill="#D4654A"/>
+            <path d="M5 2 L12 -1 L10 3" fill="#A0845C"/>
+            <line x1="-2" y1="6" x2="-3" y2="10" stroke="#7A8580" stroke-width="1"/>
+            <line x1="2" y1="6" x2="1" y2="10" stroke="#7A8580" stroke-width="1"/>
+          </g>
+
+          <!-- Clickable nav icons on the canopy -->
+          <g class="canopy-icons">
+            <!-- Features icon -->
+            <a href="#features" class="canopy-icon" aria-label="Features">
+              <g transform="translate(260, 165)">
+                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
+                <path d="M-8 -6 L0 -10 L8 -6 L8 6 L0 10 L-8 6 Z" fill="none" stroke="#1B5E43" stroke-width="1.8"/>
+                <circle r="3" fill="#E8A838"/>
+              </g>
+            </a>
+
+            <!-- How It Works icon -->
+            <a href="#how-it-works" class="canopy-icon" aria-label="How It Works">
+              <g transform="translate(340, 135)">
+                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
+                <path d="M-6 -3 L-2 -7 L6 1 L2 5 Z" fill="none" stroke="#1B5E43" stroke-width="1.8"/>
+                <circle cx="-6" cy="5" r="4" fill="none" stroke="#E8A838" stroke-width="1.5"/>
+              </g>
+            </a>
+
+            <!-- Pricing icon -->
+            <a href="#pricing" class="canopy-icon" aria-label="Pricing">
+              <g transform="translate(430, 130)">
+                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
+                <text x="0" y="5" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="16" fill="#1B5E43">$</text>
+              </g>
+            </a>
+
+            <!-- Testimonials icon -->
+            <a href="#testimonials" class="canopy-icon" aria-label="Testimonials">
+              <g transform="translate(510, 155)">
+                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
+                <path d="M-8 -4 Q-8 -8 -4 -8 L4 -8 Q8 -8 8 -4 L8 2 Q8 6 4 6 L0 6 L-4 10 L-3 6 L-4 6 Q-8 6 -8 2 Z" fill="none" stroke="#1B5E43" stroke-width="1.5"/>
+                <circle cx="-3" cy="-1" r="1" fill="#E8A838"/>
+                <circle cx="1" cy="-1" r="1" fill="#E8A838"/>
+                <circle cx="5" cy="-1" r="1" fill="#E8A838"/>
+              </g>
+            </a>
+
+            <!-- Download icon -->
+            <a href="#download" class="canopy-icon" aria-label="Download">
+              <g transform="translate(400, 105)">
+                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
+                <path d="M0 -7 L0 4 M-5 0 L0 5 L5 0" stroke="#1B5E43" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <line x1="-6" y1="8" x2="6" y2="8" stroke="#1B5E43" stroke-width="2" stroke-linecap="round"/>
+              </g>
+            </a>
+          </g>
+
+          <!-- Family scene under tree -->
+          <g class="family-scene">
+            <!-- Parent (standing, happy) -->
+            <g class="parent" transform="translate(440, 540)">
+              <circle cx="0" cy="-35" r="14" fill="#F2D5C4"/>
+              <path d="M-5 -45 Q0 -52 5 -45 Q8 -42 5 -40 Q0 -38 -5 -40 Q-8 -42 -5 -45" fill="#5A3825"/>
+              <circle cx="-4" cy="-37" r="1.5" fill="#2A3130"/>
+              <circle cx="4" cy="-37" r="1.5" fill="#2A3130"/>
+              <path d="M-3 -30 Q0 -27 3 -30" stroke="#D4654A" stroke-width="1.2" fill="none"/>
+              <rect x="-12" y="-20" width="24" height="35" rx="8" fill="#1B5E43"/>
+              <rect x="-6" y="15" width="5" height="25" rx="2" fill="#2A3130" opacity="0.8"/>
+              <rect x="1" y="15" width="5" height="25" rx="2" fill="#2A3130" opacity="0.8"/>
+              <line x1="12" y1="-10" x2="22" y2="5" stroke="#F2D5C4" stroke-width="4" stroke-linecap="round"/>
+            </g>
+
+            <!-- Child with laptop -->
+            <g class="child child--laptop" transform="translate(300, 580)">
+              <circle cx="0" cy="-22" r="10" fill="#F2D5C4"/>
+              <path d="M-4 -29 Q0 -34 4 -29" fill="#8B5E3C"/>
+              <circle cx="-3" cy="-24" r="1.2" fill="#2A3130"/>
+              <circle cx="3" cy="-24" r="1.2" fill="#2A3130"/>
+              <path d="M-2 -19 Q0 -17 2 -19" stroke="#D4654A" stroke-width="0.8" fill="none"/>
+              <rect x="-10" y="-12" width="20" height="22" rx="6" fill="#E8A838"/>
+              <rect x="-4" y="10" width="4" height="15" rx="2" fill="#2A3130" opacity="0.7"/>
+              <rect x="0" y="10" width="4" height="15" rx="2" fill="#2A3130" opacity="0.7"/>
+              <!-- Laptop -->
+              <rect x="-15" y="0" width="18" height="12" rx="2" fill="#7A8580"/>
+              <rect x="-14" y="1" width="16" height="9" rx="1" fill="#B8D4E3"/>
+              <rect x="-18" y="12" width="24" height="2" rx="1" fill="#7A8580"/>
+            </g>
+
+            <!-- Child with tablet -->
+            <g class="child child--tablet" transform="translate(500, 590)">
+              <circle cx="0" cy="-18" r="9" fill="#F2D5C4"/>
+              <path d="M-3 -24 Q0 -28 3 -24" fill="#D4A574"/>
+              <circle cx="-2.5" cy="-20" r="1" fill="#2A3130"/>
+              <circle cx="2.5" cy="-20" r="1" fill="#2A3130"/>
+              <path d="M-1.5 -16 Q0 -14.5 1.5 -16" stroke="#D4654A" stroke-width="0.7" fill="none"/>
+              <rect x="-8" y="-9" width="16" height="18" rx="5" fill="#74B49B"/>
+              <rect x="-3" y="9" width="3" height="12" rx="1.5" fill="#2A3130" opacity="0.7"/>
+              <rect x="0" y="9" width="3" height="12" rx="1.5" fill="#2A3130" opacity="0.7"/>
+              <!-- Tablet -->
+              <rect x="5" y="-8" width="10" height="14" rx="2" fill="#7A8580"/>
+              <rect x="6" y="-7" width="8" height="11" rx="1" fill="#B8D4E3"/>
+            </g>
+          </g>
+
+          <!-- Floating particles -->
+          <g class="particles">
+            <circle cx="180" cy="300" r="2" fill="#E8A838" opacity="0.4" class="particle particle--1"/>
+            <circle cx="620" cy="350" r="1.5" fill="#74B49B" opacity="0.3" class="particle particle--2"/>
+            <circle cx="300" cy="400" r="2.5" fill="#E8A838" opacity="0.3" class="particle particle--3"/>
+            <circle cx="500" cy="320" r="1.5" fill="#74B49B" opacity="0.4" class="particle particle--4"/>
+            <circle cx="700" cy="250" r="2" fill="#E8A838" opacity="0.25" class="particle particle--5"/>
+            <circle cx="100" cy="380" r="2" fill="#1B5E43" opacity="0.2" class="particle particle--6"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Features</span>
+        <h2>Everything growing families need</h2>
+        <p>Canopy gives you gentle oversight without being intrusive. Know what matters, guide when needed, and let your family thrive.</p>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
+              <path d="M16 18 L24 14 L32 18 L32 30 L24 34 L16 30 Z" fill="none" stroke="#1B5E43" stroke-width="2"/>
+              <circle cx="24" cy="24" r="4" fill="#E8A838"/>
+            </svg>
+          </div>
+          <h3>Activity Monitoring</h3>
+          <p>See which apps and websites your children use most. Understand their digital world with clear, friendly reports — not surveillance, just awareness.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
+              <circle cx="24" cy="24" r="10" fill="none" stroke="#1B5E43" stroke-width="2"/>
+              <path d="M24 16 L24 24 L30 28" fill="none" stroke="#E8A838" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Screen Time Balance</h3>
+          <p>Set healthy boundaries for daily screen time. Create schedules that work for your family — homework first, then play, then wind-down.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
+              <rect x="16" y="16" width="16" height="16" rx="3" fill="none" stroke="#1B5E43" stroke-width="2"/>
+              <path d="M20 24 L23 27 L28 21" stroke="#E8A838" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Content Filtering</h3>
+          <p>Block harmful content before it reaches your child. Age-appropriate filters that protect without over-restricting — they can always ask for access.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
+              <circle cx="24" cy="22" r="6" fill="none" stroke="#1B5E43" stroke-width="2"/>
+              <path d="M24 28 L24 34" stroke="#1B5E43" stroke-width="2"/>
+              <path d="M18 34 L30 34" stroke="#E8A838" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Location Awareness</h3>
+          <p>Know where your children are without constant check-ins. Get gentle alerts when they arrive at or leave familiar places like school or home.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
+              <path d="M18 20 Q18 16 22 16 L26 16 Q30 16 30 20 L30 24 Q30 28 26 28 L22 28 Q18 28 18 24 Z" fill="none" stroke="#1B5E43" stroke-width="2"/>
+              <circle cx="22" cy="22" r="1.5" fill="#E8A838"/>
+              <circle cx="26" cy="22" r="1.5" fill="#E8A838"/>
+              <path d="M22 32 L20 36" stroke="#1B5E43" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Smart Alerts</h3>
+          <p>Receive warm, context-aware notifications. "Emma wants more time on art class" — not alarming warnings, just helpful nudges to guide decisions.</p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
+              <rect x="16" y="18" width="16" height="12" rx="2" fill="none" stroke="#1B5E43" stroke-width="2"/>
+              <line x1="16" y1="22" x2="32" y2="22" stroke="#1B5E43" stroke-width="1.5"/>
+              <rect x="18" y="24" width="4" height="3" rx="0.5" fill="#E8A838"/>
+              <rect x="24" y="24" width="4" height="3" rx="0.5" fill="#74B49B"/>
+            </svg>
+          </div>
+          <h3>Schedule Builder</h3>
+          <p>Create custom daily schedules for each child. Bedtime mode, homework time, free time — each with its own rules. Flexible for weekends and holidays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2>Three steps to peace of mind</h2>
+        <p>Setting up Canopy takes less than five minutes. Here's how your family gets started.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-aos="fade-right">
+          <div class="step__number">1</div>
+          <div class="step__content">
+            <h3>Create your family</h3>
+            <p>Sign up for a free account and add each family member. Give everyone a name, a profile color, and a role — parent or child.</p>
+          </div>
+          <div class="step__visual">
+            <svg viewBox="0 0 200 160" width="200" height="160">
+              <rect x="30" y="20" width="140" height="120" rx="12" fill="#F6F4EF" stroke="#74B49B" stroke-width="2"/>
+              <circle cx="80" cy="65" r="15" fill="#1B5E43"/>
+              <text x="80" y="70" text-anchor="middle" fill="white" font-family="Outfit" font-weight="700" font-size="14">T</text>
+              <circle cx="120" cy="65" r="15" fill="#E8A838"/>
+              <text x="120" y="70" text-anchor="middle" fill="white" font-family="Outfit" font-weight="700" font-size="14">E</text>
+              <circle cx="100" cy="100" r="12" fill="#74B49B"/>
+              <text x="100" y="105" text-anchor="middle" fill="white" font-family="Outfit" font-weight="700" font-size="12">L</text>
+              <text x="100" y="125" text-anchor="middle" fill="#7A8580" font-family="Nunito Sans" font-size="9">Your Family</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="step" data-aos="fade-left">
+          <div class="step__number">2</div>
+          <div class="step__content">
+            <h3>Install on devices</h3>
+            <p>Add the lightweight Canopy agent to your children's Mac. It runs quietly in the background — no slowdowns, no pop-ups, just protection.</p>
+          </div>
+          <div class="step__visual">
+            <svg viewBox="0 0 200 160" width="200" height="160">
+              <rect x="40" y="25" width="120" height="80" rx="8" fill="#F6F4EF" stroke="#74B49B" stroke-width="2"/>
+              <rect x="42" y="27" width="116" height="60" rx="6" fill="#E2DED8"/>
+              <rect x="70" y="105" width="60" height="5" rx="2.5" fill="#74B49B"/>
+              <circle cx="100" cy="57" r="18" fill="#1B5E43"/>
+              <path d="M92 57 L98 63 L108 51" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="100" y="125" text-anchor="middle" fill="#7A8580" font-family="Nunito Sans" font-size="9">Protected</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="step" data-aos="fade-right">
+          <div class="step__number">3</div>
+          <div class="step__content">
+            <h3>Guide from anywhere</h3>
+            <p>Open the Canopy app on your phone to see activity, adjust schedules, approve requests, and enjoy the calm of knowing your family is safe.</p>
+          </div>
+          <div class="step__visual">
+            <svg viewBox="0 0 200 160" width="200" height="160">
+              <rect x="70" y="15" width="60" height="110" rx="10" fill="#F6F4EF" stroke="#74B49B" stroke-width="2"/>
+              <rect x="74" y="30" width="52" height="80" rx="4" fill="white"/>
+              <circle cx="100" cy="23" r="2" fill="#74B49B"/>
+              <rect x="80" y="38" width="40" height="8" rx="2" fill="#1B5E43" opacity="0.8"/>
+              <rect x="80" y="50" width="35" height="5" rx="1.5" fill="#74B49B" opacity="0.5"/>
+              <rect x="80" y="60" width="40" height="20" rx="4" fill="#F6F4EF"/>
+              <circle cx="90" cy="70" r="5" fill="#E8A838"/>
+              <text x="104" y="68" fill="#2A3130" font-family="Nunito Sans" font-size="6" font-weight="600">Emma</text>
+              <text x="104" y="75" fill="#7A8580" font-family="Nunito Sans" font-size="5">2h 15m today</text>
+              <rect x="80" y="84" width="40" height="20" rx="4" fill="#F6F4EF"/>
+              <circle cx="90" cy="94" r="5" fill="#74B49B"/>
+              <text x="104" y="92" fill="#2A3130" font-family="Nunito Sans" font-size="6" font-weight="600">Liam</text>
+              <text x="104" y="99" fill="#7A8580" font-family="Nunito Sans" font-size="5">45m today</text>
+              <text x="100" y="143" text-anchor="middle" fill="#7A8580" font-family="Nunito Sans" font-size="9">Your dashboard</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pricing</span>
+        <h2>Plans that grow with your family</h2>
+        <p>Start with a free trial. Upgrade when you're ready — no surprises, cancel anytime.</p>
+      </div>
+
+      <div class="pricing__toggle">
+        <span class="pricing__toggle-label pricing__toggle-label--active" data-period="monthly">Monthly</span>
+        <button class="pricing__toggle-switch" id="pricingToggle" aria-label="Toggle yearly pricing">
+          <span class="pricing__toggle-knob"></span>
+        </button>
+        <span class="pricing__toggle-label" data-period="yearly">Yearly <span class="pricing__save-badge">Save ~17%</span></span>
+      </div>
+
+      <div class="pricing__grid">
+        <div class="pricing-card" data-aos="fade-up">
+          <div class="pricing-card__header">
+            <h3>Starter</h3>
+            <p class="pricing-card__desc">For one child, one device</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount" data-monthly="2.99" data-yearly="24.99">$2.99</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>1 child profile</li>
+            <li>1 device</li>
+            <li>Activity monitoring</li>
+            <li>Basic screen time limits</li>
+            <li>Content filtering</li>
+          </ul>
+          <a href="#download" class="btn btn--outline">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card pricing-card--popular" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3>Family</h3>
+            <p class="pricing-card__desc">For families getting started</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount" data-monthly="4.99" data-yearly="41.99">$4.99</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Up to 3 child profiles</li>
+            <li>3 devices</li>
+            <li>Everything in Starter</li>
+            <li>Location awareness</li>
+            <li>Schedule builder</li>
+            <li>Smart alerts</li>
+          </ul>
+          <a href="#download" class="btn btn--primary">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-card__header">
+            <h3>Family+</h3>
+            <p class="pricing-card__desc">For larger families</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount" data-monthly="7.99" data-yearly="67.99">$7.99</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Up to 6 child profiles</li>
+            <li>6 devices</li>
+            <li>Everything in Family</li>
+            <li>Priority support</li>
+            <li>Advanced reports</li>
+          </ul>
+          <a href="#download" class="btn btn--outline">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-card__header">
+            <h3>Mega Family</h3>
+            <p class="pricing-card__desc">For the biggest families</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount" data-monthly="9.99" data-yearly="83.99">$9.99</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Up to 10 child profiles</li>
+            <li>10 devices</li>
+            <li>Everything in Family+</li>
+            <li>Admin dashboard</li>
+            <li>Multi-parent controls</li>
+          </ul>
+          <a href="#download" class="btn btn--outline">Start Free Trial</a>
+        </div>
+      </div>
+
+      <div class="pricing__institutional">
+        <div class="pricing__institutional-inner">
+          <div>
+            <h3>For Schools &amp; Institutions</h3>
+            <p>Protect every student with Canopy's institutional plan — just <strong>$1.99 per student/month</strong>. Bulk licensing, admin dashboards, and dedicated support.</p>
+          </div>
+          <a href="#download" class="btn btn--primary">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Stories</span>
+        <h2>Families who found their calm</h2>
+        <p>Real parents, real peace of mind. Here's what families say about life under the canopy.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card" data-aos="fade-up">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>
+            <p>"I used to check my daughter's laptop every night before bed. Now I just glance at the Canopy app over coffee. The reports are clear, the alerts are helpful, and I actually sleep better."</p>
+          </blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background-color: #1B5E43;">S</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <span>Mom of 2 · Portland, OR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>
+            <p>"What I love most is the tone. When my son hits his screen time limit, the message is kind — 'Time for a break, Liam!' — not 'ACCESS DENIED.' He actually responds well to it."</p>
+          </blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background-color: #E8A838;">D</div>
+            <div>
+              <strong>David K.</strong>
+              <span>Dad of 3 · Austin, TX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>
+            <p>"We adopted Canopy for our whole school. The admin dashboard makes it easy to manage 200+ students, and parents love being able to extend protection at home too."</p>
+          </blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background-color: #74B49B;">R</div>
+            <div>
+              <strong>Rachel T.</strong>
+              <span>IT Director · Lincoln Academy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download__inner">
+        <div class="download__tree" aria-hidden="true">
+          <svg viewBox="0 0 120 160" width="120" height="160">
+            <ellipse cx="60" cy="50" rx="50" ry="40" fill="#1B5E43" opacity="0.9"/>
+            <ellipse cx="45" cy="45" rx="35" ry="30" fill="#74B49B" opacity="0.7"/>
+            <ellipse cx="75" cy="45" rx="35" ry="30" fill="#74B49B" opacity="0.6"/>
+            <ellipse cx="60" cy="40" rx="25" ry="22" fill="#1B5E43" opacity="0.6"/>
+            <rect x="56" y="80" width="8" height="40" rx="4" fill="#A0845C"/>
+            <circle cx="60" cy="115" r="6" fill="#E8A838" opacity="0.5"/>
+          </svg>
+        </div>
+        <h2>Ready to shelter your family?</h2>
+        <p>Start your free 14-day trial today. No credit card needed. Set up in under 5 minutes.</p>
+        <div class="download__actions">
+          <a href="#" class="btn btn--primary btn--lg">Download for macOS</a>
+          <a href="#" class="btn btn--ghost btn--lg">Get the Mobile App</a>
+        </div>
+        <div class="download__platforms">
+          <span>Available on</span>
+          <div class="download__platform-icons">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#7A8580"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z"/></svg>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#7A8580"><path d="M17.523 2.789l-5.524 9.6 5.524 9.611H6.477L1 12.389l5.477-9.6h11.046zM7.71 4.789L3.688 12.389l4.023 7.611h8.58l-4.023-7.611L16.29 4.789H7.71z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 40 40" width="32" height="32">
+              <circle cx="20" cy="14" r="12" fill="#1B5E43"/>
+              <circle cx="14" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
+              <circle cx="26" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
+              <circle cx="20" cy="10" r="6" fill="#1B5E43" opacity="0.7"/>
+              <rect x="18.5" y="22" width="3" height="10" rx="1.5" fill="#A0845C"/>
+              <circle cx="20" cy="30" r="2.5" fill="#E8A838" opacity="0.8"/>
+            </svg>
+            <span class="nav__wordmark">canopy</span>
+          </a>
+          <p>Digital safety for growing families. Shelter, guide, grow.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Canopy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
