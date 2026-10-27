@@ -1340,10 +1340,19 @@ ul { list-style: none; }
   .nav__links.open { right: 0; }
   .nav__links a { font-size: 1.1rem; color: var(--white); }
 
-  .hero { min-height: 100svh; padding-top: 80px; }
+  .hero { min-height: auto; padding-top: 80px; padding-bottom: 0; }
   .hero__title { font-size: clamp(1.8rem, 7vw, 2.8rem); }
 
+  .hero__tree-bg { display: none; }
   .hero__bubbles { display: none; }
+
+  .hero__characters {
+    margin-top: 20px;
+  }
+
+  .hero__content {
+    padding-bottom: 10px;
+  }
 
   .features__grid {
     grid-template-columns: 1fr;
