@@ -71,38 +71,9 @@
       <div class="hero-leaf hero-leaf--5"></div>
     </div>
 
-    <!-- Floating icon bubbles are now embedded in the SVG canopy below -->
-
-    <!-- Centered hero text -->
-    <div class="hero__content">
-      <h1 class="hero__title">
-        YOUR FAMILY'S<br>
-        <span class="hero__title--glow">DIGITAL GUARDIAN</span>
-      </h1>
-      <p class="hero__subtitle">
-        Shelter your children online with smart, loving protection.<br>
-        Guide screen time and nurture healthy digital habits.
-      </p>
-      <div class="hero__actions">
-        <a href="#download" class="btn btn--hero">
-          Get Started
-          <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M10 3a1 1 0 011 1v9.586l3.293-3.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 13.586V4a1 1 0 011-1z"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- CHARACTER IMAGE — this is the star of the hero -->
-    <!-- Replace this with a generated 3D illustration -->
-    <div class="hero__characters" id="heroCharacters">
-      <!--
-        IMAGE PLACEHOLDER:
-        This should be a wide, transparent-background PNG/WebP of a 3D animated
-        family scene (Disney/Pixar style). See IMAGE GENERATION PROMPTS at bottom.
-        Size: 1600x800px minimum, transparent background.
-        Drop the image at images/hero-family.png and uncomment the img tag below.
-      -->
-      <img src="images/hero-combined.png" alt="Massive canopy tree with floating icon bubbles and happy animated family underneath" class="hero__characters-img">
-
+    <!-- Canopy tree blended into the background behind hero text -->
+    <div class="hero__tree-bg">
+      <img src="images/canopy-tree.png" alt="" class="hero__tree-img" aria-hidden="true">
       <!-- Clickable icon overlays positioned over the tree's bubbles -->
       <div class="hero__icon-links">
         <a href="#feature-content" class="hero__icon-link hero__icon-link--shield" aria-label="Content Filtering">
@@ -121,6 +92,29 @@
           <span class="hero__icon-link-label">Alerts</span>
         </a>
       </div>
+    </div>
+
+    <!-- Centered hero text — overlays the tree -->
+    <div class="hero__content">
+      <h1 class="hero__title">
+        YOUR FAMILY'S<br>
+        <span class="hero__title--glow">DIGITAL GUARDIAN</span>
+      </h1>
+      <p class="hero__subtitle">
+        Shelter your children online with smart, loving protection.<br>
+        Guide screen time and nurture healthy digital habits.
+      </p>
+      <div class="hero__actions">
+        <a href="#download" class="btn btn--hero">
+          Get Started
+          <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M10 3a1 1 0 011 1v9.586l3.293-3.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 13.586V4a1 1 0 011-1z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Family crowd image — below the CTA button -->
+    <div class="hero__characters" id="heroCharacters">
+      <img src="images/hero-family.png" alt="Happy animated family — parents and children waving" class="hero__characters-img">
 
       <!-- Temporary SVG placeholder (hidden now that 3D render is active) -->
       <svg class="hero__characters-placeholder" style="display: none;" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Happy family under giant canopy tree — placeholder for 3D illustration">
