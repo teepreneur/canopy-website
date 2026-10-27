@@ -101,10 +101,29 @@
         Size: 1600x800px minimum, transparent background.
         Drop the image at images/hero-family.png and uncomment the img tag below.
       -->
-      <!-- <img src="images/hero-family.png" alt="Happy animated family — parents and children waving, surrounded by nature and digital devices" class="hero__characters-img"> -->
+      <img src="images/hero-combined.png" alt="Massive canopy tree with floating icon bubbles and happy animated family underneath" class="hero__characters-img">
 
-      <!-- Temporary SVG placeholder — massive canopy tree with family underneath -->
-      <svg class="hero__characters-placeholder" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Happy family under giant canopy tree — placeholder for 3D illustration">
+      <!-- Clickable icon overlays positioned over the tree's bubbles -->
+      <div class="hero__icon-links">
+        <a href="#feature-content" class="hero__icon-link hero__icon-link--shield" aria-label="Content Filtering">
+          <span class="hero__icon-link-label">Protection</span>
+        </a>
+        <a href="#feature-screentime" class="hero__icon-link hero__icon-link--clock" aria-label="Screen Time Balance">
+          <span class="hero__icon-link-label">Screen Time</span>
+        </a>
+        <a href="#feature-activity" class="hero__icon-link hero__icon-link--monitor" aria-label="Activity Monitoring">
+          <span class="hero__icon-link-label">Activity</span>
+        </a>
+        <a href="#feature-location" class="hero__icon-link hero__icon-link--location" aria-label="Location Awareness">
+          <span class="hero__icon-link-label">Location</span>
+        </a>
+        <a href="#feature-alerts" class="hero__icon-link hero__icon-link--bell" aria-label="Smart Alerts">
+          <span class="hero__icon-link-label">Alerts</span>
+        </a>
+      </div>
+
+      <!-- Temporary SVG placeholder (hidden now that 3D render is active) -->
+      <svg class="hero__characters-placeholder" style="display: none;" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Happy family under giant canopy tree — placeholder for 3D illustration">
         <defs>
           <radialGradient id="groundGlow" cx="50%" cy="100%" r="60%">
             <stop offset="0%" stop-color="#E8A838" stop-opacity="0.2"/>
@@ -415,38 +434,50 @@
       </div>
 
       <div class="features__grid">
-        <div class="feature-card">
-          <div class="feature-card__emoji">&#x1F50D;</div>
+        <div class="feature-card" id="feature-activity">
+          <div class="feature-card__icon">
+            <img src="images/feature-activity.png" alt="Activity Monitoring 3D Icon" class="feature-card__icon-img" width="72" height="72">
+          </div>
           <h3>Activity Monitoring</h3>
           <p>See which apps and websites your children use. Clear, friendly reports — not surveillance, just awareness.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-card__emoji">&#x23F0;</div>
+        <div class="feature-card" id="feature-screentime">
+          <div class="feature-card__icon">
+            <img src="images/feature-screentime.png" alt="Screen Time Balance 3D Icon" class="feature-card__icon-img" width="72" height="72">
+          </div>
           <h3>Screen Time Balance</h3>
           <p>Set healthy boundaries. Homework first, then play, then wind-down. Schedules that flex for weekends.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-card__emoji">&#x1F6E1;</div>
+        <div class="feature-card" id="feature-content">
+          <div class="feature-card__icon">
+            <img src="images/feature-content.png" alt="Content Filtering 3D Icon" class="feature-card__icon-img" width="72" height="72">
+          </div>
           <h3>Content Filtering</h3>
           <p>Block harmful content before it arrives. Age-appropriate filters — and kids can always ask for access.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-card__emoji">&#x1F4CD;</div>
+        <div class="feature-card" id="feature-location">
+          <div class="feature-card__icon">
+            <img src="images/feature-location.png" alt="Location Awareness 3D Icon" class="feature-card__icon-img" width="72" height="72">
+          </div>
           <h3>Location Awareness</h3>
           <p>Know where your children are without constant check-ins. Gentle alerts for school, home, and more.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-card__emoji">&#x1F514;</div>
+        <div class="feature-card" id="feature-alerts">
+          <div class="feature-card__icon">
+            <img src="images/feature-alerts.png" alt="Smart Alerts 3D Icon" class="feature-card__icon-img" width="72" height="72">
+          </div>
           <h3>Smart Alerts</h3>
           <p>"Emma wants more time on art class" — warm nudges, not alarming warnings. You decide what happens next.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-card__emoji">&#x1F4C5;</div>
+          <div class="feature-card__icon">
+            <img src="images/feature-schedule.png" alt="Schedule Builder 3D Icon" class="feature-card__icon-img" width="72" height="72">
+          </div>
           <h3>Schedule Builder</h3>
           <p>Bedtime mode, homework time, free time — each with its own rules. Custom schedules for every child.</p>
         </div>
@@ -625,7 +656,9 @@
             <p>"I used to check my daughter's laptop every night. Now I just glance at the Canopy app over coffee. I actually sleep better."</p>
           </blockquote>
           <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #1B5E43, #74B49B);">S</div>
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #E8A838, #D4654A);">
+              <img src="images/character-mom.png" alt="Sarah M." class="testimonial-card__avatar-img">
+            </div>
             <div>
               <strong>Sarah M.</strong>
               <span>Mom of 2 &middot; Portland, OR</span>
@@ -639,7 +672,9 @@
             <p>"The tone is what sold me. When my son hits his limit, it says 'Time for a break, Liam!' — not 'ACCESS DENIED.' He actually listens."</p>
           </blockquote>
           <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #E8A838, #D4654A);">D</div>
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #1B5E43, #74B49B);">
+              <img src="images/character-dad.png" alt="David K." class="testimonial-card__avatar-img">
+            </div>
             <div>
               <strong>David K.</strong>
               <span>Dad of 3 &middot; Austin, TX</span>
@@ -653,7 +688,9 @@
             <p>"We rolled Canopy out to 200+ students. The admin dashboard is a dream, and parents love extending protection at home."</p>
           </blockquote>
           <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #74B49B, #1B5E43);">R</div>
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #74B49B, #1B5E43);">
+              <img src="images/character-girl.png" alt="Rachel T." class="testimonial-card__avatar-img">
+            </div>
             <div>
               <strong>Rachel T.</strong>
               <span>IT Director &middot; Lincoln Academy</span>

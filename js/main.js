@@ -89,6 +89,11 @@
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
+        if (target.classList.contains('feature-card')) {
+          target.classList.remove('highlight');
+          void target.offsetWidth;
+          target.classList.add('highlight');
+        }
       }
     });
   });
