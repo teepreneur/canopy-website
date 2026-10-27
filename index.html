@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canopy — Digital Safety Under the Family Tree</title>
+  <title>Canopy — Your Family's Digital Guardian</title>
   <meta name="description" content="Canopy helps families build healthy digital habits. Monitor activity, manage screen time, and keep children safe online — all under one protective canopy.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='12' r='10' fill='%231B5E43'/><circle cx='12' cy='10' r='7' fill='%2374B49B'/><circle cx='20' cy='10' r='7' fill='%2374B49B'/><rect x='15' y='18' width='2' height='8' rx='1' fill='%23A0845C'/><circle cx='16' cy='24' r='2' fill='%23E8A838'/></svg>">
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Navigation — transparent over hero -->
   <nav class="nav" id="nav">
     <div class="nav__container">
       <a href="#" class="nav__logo" aria-label="Canopy home">
         <svg class="nav__logo-icon" viewBox="0 0 40 40" width="36" height="36">
-          <circle cx="20" cy="14" r="12" fill="#1B5E43"/>
-          <circle cx="14" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
-          <circle cx="26" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
-          <circle cx="20" cy="10" r="6" fill="#1B5E43" opacity="0.7"/>
-          <rect x="18.5" y="22" width="3" height="10" rx="1.5" fill="#A0845C"/>
-          <circle cx="20" cy="30" r="2.5" fill="#E8A838" opacity="0.8"/>
+          <circle cx="20" cy="14" r="12" fill="white" opacity="0.9"/>
+          <circle cx="14" cy="12" r="8" fill="white" opacity="0.5"/>
+          <circle cx="26" cy="12" r="8" fill="white" opacity="0.5"/>
+          <circle cx="20" cy="10" r="6" fill="white" opacity="0.7"/>
+          <rect x="18.5" y="22" width="3" height="10" rx="1.5" fill="white" opacity="0.6"/>
+          <circle cx="20" cy="30" r="2.5" fill="#E8A838" opacity="0.9"/>
         </svg>
         <span class="nav__wordmark">canopy</span>
       </a>
@@ -39,417 +39,476 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- ====================================
+       HERO — Full viewport, cinematic
+       ==================================== -->
   <section class="hero" id="hero">
-    <div class="hero__parallax-bg">
-      <div class="hero__clouds">
-        <div class="cloud cloud--1"></div>
-        <div class="cloud cloud--2"></div>
-        <div class="cloud cloud--3"></div>
+    <!-- Animated background layers -->
+    <div class="hero__bg">
+      <div class="hero__gradient"></div>
+      <div class="hero__rays">
+        <div class="ray ray--1"></div>
+        <div class="ray ray--2"></div>
+        <div class="ray ray--3"></div>
+        <div class="ray ray--4"></div>
+        <div class="ray ray--5"></div>
+      </div>
+      <!-- Floating sparkles -->
+      <div class="sparkle sparkle--1"></div>
+      <div class="sparkle sparkle--2"></div>
+      <div class="sparkle sparkle--3"></div>
+      <div class="sparkle sparkle--4"></div>
+      <div class="sparkle sparkle--5"></div>
+      <div class="sparkle sparkle--6"></div>
+      <div class="sparkle sparkle--7"></div>
+      <div class="sparkle sparkle--8"></div>
+
+      <!-- Floating leaf shapes -->
+      <div class="hero-leaf hero-leaf--1"></div>
+      <div class="hero-leaf hero-leaf--2"></div>
+      <div class="hero-leaf hero-leaf--3"></div>
+      <div class="hero-leaf hero-leaf--4"></div>
+      <div class="hero-leaf hero-leaf--5"></div>
+    </div>
+
+    <!-- Floating icon bubbles are now embedded in the SVG canopy below -->
+
+    <!-- Centered hero text -->
+    <div class="hero__content">
+      <h1 class="hero__title">
+        YOUR FAMILY'S<br>
+        <span class="hero__title--glow">DIGITAL GUARDIAN</span>
+      </h1>
+      <p class="hero__subtitle">
+        Shelter your children online with smart, loving protection.<br>
+        Guide screen time and nurture healthy digital habits.
+      </p>
+      <div class="hero__actions">
+        <a href="#download" class="btn btn--hero">
+          Get Started
+          <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M10 3a1 1 0 011 1v9.586l3.293-3.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 13.586V4a1 1 0 011-1z"/></svg>
+        </a>
       </div>
     </div>
 
-    <div class="hero__container">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          <span class="hero__title-line">Safety grows</span>
-          <span class="hero__title-line hero__title-line--accent">under the canopy</span>
-        </h1>
-        <p class="hero__subtitle">
-          Give your family the shelter of smart digital protection.
-          Monitor activity, guide screen time, and nurture healthy habits —
-          while letting them explore and grow.
-        </p>
-        <div class="hero__actions">
-          <a href="#download" class="btn btn--primary btn--lg">Start Free Trial</a>
-          <a href="#how-it-works" class="btn btn--ghost btn--lg">See How It Works</a>
-        </div>
-      </div>
+    <!-- CHARACTER IMAGE — this is the star of the hero -->
+    <!-- Replace this with a generated 3D illustration -->
+    <div class="hero__characters" id="heroCharacters">
+      <!--
+        IMAGE PLACEHOLDER:
+        This should be a wide, transparent-background PNG/WebP of a 3D animated
+        family scene (Disney/Pixar style). See IMAGE GENERATION PROMPTS at bottom.
+        Size: 1600x800px minimum, transparent background.
+        Drop the image at images/hero-family.png and uncomment the img tag below.
+      -->
+      <!-- <img src="images/hero-family.png" alt="Happy animated family — parents and children waving, surrounded by nature and digital devices" class="hero__characters-img"> -->
 
-      <div class="hero__scene">
-        <!-- The Canopy Tree SVG -->
-        <svg class="hero__tree" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated canopy tree with family beneath it">
-          <!-- Ground -->
-          <ellipse cx="400" cy="650" rx="350" ry="30" fill="#74B49B" opacity="0.3"/>
-          <ellipse cx="400" cy="655" rx="300" ry="20" fill="#74B49B" opacity="0.2"/>
+      <!-- Temporary SVG placeholder — massive canopy tree with family underneath -->
+      <svg class="hero__characters-placeholder" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Happy family under giant canopy tree — placeholder for 3D illustration">
+        <defs>
+          <radialGradient id="groundGlow" cx="50%" cy="100%" r="60%">
+            <stop offset="0%" stop-color="#E8A838" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="canopyGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#E8A838" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="softGlow">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="leafShadow">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F3D2B" flood-opacity="0.3"/>
+          </filter>
+        </defs>
 
-          <!-- Grass tufts -->
-          <g class="grass" fill="#74B49B" opacity="0.5">
-            <path d="M120 640 Q125 620 130 640"/>
-            <path d="M135 642 Q140 625 145 642"/>
-            <path d="M200 645 Q205 628 210 645"/>
-            <path d="M550 642 Q555 622 560 642"/>
-            <path d="M600 644 Q605 630 610 644"/>
-            <path d="M620 642 Q625 626 630 642"/>
-            <path d="M300 648 Q305 635 310 648"/>
-            <path d="M480 646 Q485 632 490 646"/>
+        <!-- Ground glow -->
+        <rect x="0" y="550" width="1200" height="150" fill="url(#groundGlow)"/>
+
+        <!-- ===== MASSIVE CANOPY TREE ===== -->
+        <!-- Trunk — thick and tall -->
+        <g filter="url(#softGlow)">
+          <rect x="570" y="340" width="60" height="260" rx="30" fill="#8B6B3E"/>
+          <rect x="580" y="340" width="20" height="260" rx="10" fill="#A0845C" opacity="0.5"/>
+          <!-- Roots -->
+          <path d="M570 580 Q540 600 510 610" stroke="#8B6B3E" stroke-width="18" stroke-linecap="round" fill="none"/>
+          <path d="M630 580 Q660 600 690 610" stroke="#8B6B3E" stroke-width="18" stroke-linecap="round" fill="none"/>
+          <path d="M585 590 Q560 610 545 625" stroke="#8B6B3E" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M615 590 Q640 610 655 625" stroke="#8B6B3E" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <!-- Branches reaching out -->
+          <path d="M580 380 Q480 350 380 300" stroke="#8B6B3E" stroke-width="16" stroke-linecap="round" fill="none"/>
+          <path d="M620 380 Q720 350 820 300" stroke="#8B6B3E" stroke-width="16" stroke-linecap="round" fill="none"/>
+          <path d="M590 360 Q510 310 420 260" stroke="#8B6B3E" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M610 360 Q690 310 780 260" stroke="#8B6B3E" stroke-width="12" stroke-linecap="round" fill="none"/>
+        </g>
+
+        <!-- Canopy — massive, layered, spanning most of the width -->
+        <g filter="url(#leafShadow)">
+          <!-- Deepest layer -->
+          <ellipse cx="600" cy="200" rx="480" ry="200" fill="#0F3D2B" opacity="0.6"/>
+          <!-- Main canopy body -->
+          <ellipse cx="600" cy="190" rx="450" ry="185" fill="#16523B"/>
+          <!-- Secondary blobs for organic shape -->
+          <ellipse cx="380" cy="210" rx="200" ry="150" fill="#1B5E43"/>
+          <ellipse cx="820" cy="210" rx="200" ry="150" fill="#1B5E43"/>
+          <ellipse cx="600" cy="170" rx="300" ry="140" fill="#1B5E43"/>
+          <!-- Lighter overlay blobs -->
+          <ellipse cx="500" cy="180" rx="180" ry="120" fill="#2D7A54" opacity="0.6"/>
+          <ellipse cx="700" cy="180" rx="180" ry="120" fill="#2D7A54" opacity="0.5"/>
+          <ellipse cx="600" cy="160" rx="220" ry="100" fill="#74B49B" opacity="0.35"/>
+          <ellipse cx="450" cy="190" rx="140" ry="90" fill="#74B49B" opacity="0.25"/>
+          <ellipse cx="750" cy="190" rx="140" ry="90" fill="#74B49B" opacity="0.2"/>
+          <!-- Bright highlight patches -->
+          <ellipse cx="550" cy="150" rx="100" ry="60" fill="#9DD4BB" opacity="0.15"/>
+          <ellipse cx="680" cy="160" rx="80" ry="50" fill="#9DD4BB" opacity="0.12"/>
+        </g>
+
+        <!-- Canopy inner glow -->
+        <ellipse cx="600" cy="200" rx="400" ry="170" fill="url(#canopyGlow)"/>
+
+        <!-- Dappled golden light spots in the canopy -->
+        <circle cx="420" cy="160" r="14" fill="#E8A838" opacity="0.15"/>
+        <circle cx="550" cy="130" r="10" fill="#E8A838" opacity="0.2"/>
+        <circle cx="680" cy="140" r="12" fill="#E8A838" opacity="0.18"/>
+        <circle cx="780" cy="170" r="8" fill="#E8A838" opacity="0.15"/>
+        <circle cx="350" cy="200" r="10" fill="#E8A838" opacity="0.12"/>
+        <circle cx="850" cy="190" r="9" fill="#E8A838" opacity="0.1"/>
+        <circle cx="600" cy="110" r="16" fill="#E8A838" opacity="0.1"/>
+        <circle cx="500" cy="220" r="8" fill="#E8A838" opacity="0.12"/>
+        <circle cx="700" cy="230" r="7" fill="#E8A838" opacity="0.1"/>
+
+        <!-- Floating icon bubbles INSIDE the canopy -->
+        <!-- Shield / Protection -->
+        <g class="char char--extra" transform="translate(300, 140)">
+          <rect x="-38" y="-16" width="76" height="32" rx="16" fill="white" opacity="0.92"/>
+          <svg x="-32" y="-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E43" stroke-width="1.8">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <text x="2" y="5" font-family="Outfit, sans-serif" font-weight="600" font-size="11" fill="#2A3130">Shield</text>
+        </g>
+        <!-- Clock / Screen Time -->
+        <g class="char char--child1" transform="translate(500, 90)">
+          <rect x="-48" y="-16" width="96" height="32" rx="16" fill="white" opacity="0.92"/>
+          <svg x="-42" y="-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E43" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+          </svg>
+          <text x="-14" y="5" font-family="Outfit, sans-serif" font-weight="600" font-size="11" fill="#2A3130">Screen Time</text>
+        </g>
+        <!-- Monitor / Activity -->
+        <g class="char char--child2" transform="translate(750, 100)">
+          <rect x="-40" y="-16" width="80" height="32" rx="16" fill="white" opacity="0.92"/>
+          <svg x="-34" y="-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E43" stroke-width="1.8">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+          <text x="-4" y="5" font-family="Outfit, sans-serif" font-weight="600" font-size="11" fill="#2A3130">Activity</text>
+        </g>
+        <!-- Pin / Location -->
+        <g class="char char--dad" transform="translate(900, 160)">
+          <rect x="-42" y="-16" width="84" height="32" rx="16" fill="white" opacity="0.92"/>
+          <svg x="-36" y="-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E43" stroke-width="1.8">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <text x="-8" y="5" font-family="Outfit, sans-serif" font-weight="600" font-size="11" fill="#2A3130">Location</text>
+        </g>
+        <!-- Bell / Alerts -->
+        <g class="char char--mom" transform="translate(600, 280)">
+          <rect x="-34" y="-16" width="68" height="32" rx="16" fill="white" opacity="0.92"/>
+          <svg x="-28" y="-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E43" stroke-width="1.8">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+          <text x="2" y="5" font-family="Outfit, sans-serif" font-weight="600" font-size="11" fill="#2A3130">Alerts</text>
+        </g>
+
+        <!-- Swing hanging from branch -->
+        <g>
+          <line x1="440" y1="280" x2="430" y2="380" stroke="#A0845C" stroke-width="3"/>
+          <line x1="480" y1="280" x2="470" y2="380" stroke="#A0845C" stroke-width="3"/>
+          <rect x="425" y="378" width="50" height="8" rx="4" fill="#8B6B3E"/>
+        </g>
+
+        <!-- Bird on branch -->
+        <g transform="translate(780, 270)">
+          <ellipse cx="0" cy="0" rx="10" ry="8" fill="#E8A838"/>
+          <circle cx="-8" cy="-5" r="6" fill="#E8A838"/>
+          <circle cx="-10" cy="-6" r="2" fill="#2A3130"/>
+          <circle cx="-9.5" cy="-5.5" r="0.7" fill="white"/>
+          <path d="M-14 -5 L-18 -4 L-14 -3" fill="#D4654A"/>
+          <path d="M8 -2 Q16 -6 14 2" fill="#D4654A" opacity="0.7"/>
+          <rect x="-3" y="7" width="3" height="6" rx="1" fill="#A0845C"/>
+          <rect x="2" y="7" width="3" height="6" rx="1" fill="#A0845C"/>
+        </g>
+
+        <!-- ===== FAMILY GROUP — under the tree ===== -->
+        <!-- Dad (left-center) -->
+        <g class="char char--dad" transform="translate(420, 440)">
+          <rect x="-20" y="22" width="40" height="60" rx="14" fill="#1B5E43"/>
+          <circle cx="0" cy="0" r="28" fill="#D4A574"/>
+          <path d="M-14 -12 Q0 -28 14 -12" fill="#4A3020"/>
+          <circle cx="-8" cy="-2" r="3.5" fill="#2A3130"/>
+          <circle cx="8" cy="-2" r="3.5" fill="#2A3130"/>
+          <circle cx="-7" cy="-1" r="1.2" fill="white"/>
+          <circle cx="9" cy="-1" r="1.2" fill="white"/>
+          <path d="M-7 9 Q0 18 7 9" fill="#D4654A" opacity="0.8"/>
+          <path d="M-5 11 Q0 14 5 11" fill="white" opacity="0.9"/>
+          <rect x="-9" y="82" width="11" height="44" rx="5" fill="#2A3130"/>
+          <rect x="-2" y="82" width="11" height="44" rx="5" fill="#3A4140"/>
+          <g class="wave-arm">
+            <line x1="20" y1="32" x2="42" y2="5" stroke="#D4A574" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="44" cy="2" r="7" fill="#D4A574"/>
           </g>
+        </g>
 
-          <!-- Tree trunk -->
-          <g class="tree-trunk">
-            <path d="M370 420 Q365 500 355 580 Q350 620 345 650 L365 655 Q375 620 380 580 L420 580 Q425 620 435 655 L455 650 Q445 620 440 580 Q435 500 430 420 Z" fill="#A0845C"/>
-            <path d="M380 440 Q382 500 384 560 L390 560 Q388 500 386 440 Z" fill="#8B7348" opacity="0.3"/>
-            <path d="M410 450 Q412 510 414 570 L418 570 Q416 510 414 450 Z" fill="#8B7348" opacity="0.2"/>
-            <!-- Roots -->
-            <path d="M345 650 Q320 660 300 658" stroke="#A0845C" stroke-width="6" fill="none" stroke-linecap="round"/>
-            <path d="M455 650 Q480 660 500 655" stroke="#A0845C" stroke-width="6" fill="none" stroke-linecap="round"/>
-            <path d="M350 648 Q335 665 325 668" stroke="#A0845C" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <!-- Mom (right-center) -->
+        <g class="char char--mom" transform="translate(780, 445)">
+          <rect x="-18" y="20" width="36" height="55" rx="12" fill="#E8A838"/>
+          <circle cx="0" cy="0" r="26" fill="#F2D5C4"/>
+          <path d="M-16 -6 Q-16 -22 0 -24 Q16 -22 16 -6 Q16 0 14 5 L-14 5 Q-16 0 -16 -6" fill="#5A3825"/>
+          <circle cx="-7" cy="-1" r="3" fill="#2A3130"/>
+          <circle cx="7" cy="-1" r="3" fill="#2A3130"/>
+          <circle cx="-6" cy="0" r="1" fill="white"/>
+          <circle cx="8" cy="0" r="1" fill="white"/>
+          <path d="M-6 9 Q0 16 6 9" fill="#D4654A" opacity="0.8"/>
+          <path d="M-4 10 Q0 13 4 10" fill="white" opacity="0.8"/>
+          <rect x="-8" y="75" width="10" height="40" rx="4" fill="#2A3130"/>
+          <rect x="-2" y="75" width="10" height="40" rx="4" fill="#3A4140"/>
+          <g class="wave-arm wave-arm--delay">
+            <line x1="-18" y1="30" x2="-40" y2="0" stroke="#F2D5C4" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="-42" cy="-2" r="6.5" fill="#F2D5C4"/>
           </g>
+        </g>
 
-          <!-- Swing ropes -->
-          <g class="swing">
-            <line x1="360" y1="320" x2="340" y2="560" stroke="#A0845C" stroke-width="2.5" opacity="0.8"/>
-            <line x1="390" y1="320" x2="370" y2="560" stroke="#A0845C" stroke-width="2.5" opacity="0.8"/>
-            <!-- Swing seat -->
-            <rect x="332" y="558" width="46" height="6" rx="3" fill="#E8A838"/>
-            <!-- Child on swing -->
-            <g class="swing-child" transform="translate(355, 530)">
-              <circle cx="0" cy="-10" r="8" fill="#F2D5C4"/>
-              <path d="M-6 0 Q0 15 6 0" fill="#74B49B"/>
-              <path d="M-4 -14 Q0 -18 4 -14" fill="#5A3825" opacity="0.8"/>
-              <circle cx="-3" cy="-11" r="1" fill="#2A3130"/>
-              <circle cx="3" cy="-11" r="1" fill="#2A3130"/>
-              <path d="M-2 -7 Q0 -5 2 -7" stroke="#D4654A" stroke-width="0.8" fill="none"/>
-            </g>
+        <!-- Boy with laptop (front-left) -->
+        <g class="char char--child1" transform="translate(300, 490)">
+          <rect x="-14" y="15" width="28" height="40" rx="10" fill="#74B49B"/>
+          <circle cx="0" cy="0" r="20" fill="#F2D5C4"/>
+          <path d="M-10 -8 Q0 -18 10 -8" fill="#8B5E3C"/>
+          <circle cx="-5.5" cy="-1" r="2.5" fill="#2A3130"/>
+          <circle cx="5.5" cy="-1" r="2.5" fill="#2A3130"/>
+          <circle cx="-4.5" cy="-0.5" r="0.8" fill="white"/>
+          <circle cx="6.5" cy="-0.5" r="0.8" fill="white"/>
+          <path d="M-4 7 Q0 12 4 7" fill="#D4654A" opacity="0.9"/>
+          <rect x="-5" y="55" width="7" height="30" rx="3" fill="#1B5E43" opacity="0.8"/>
+          <rect x="-2" y="55" width="7" height="30" rx="3" fill="#1B5E43" opacity="0.7"/>
+          <rect x="12" y="25" width="22" height="16" rx="3" fill="#7A8580"/>
+          <rect x="13" y="26" width="20" height="12" rx="2" fill="#B8D4E3"/>
+          <rect x="10" y="41" width="26" height="3" rx="1.5" fill="#7A8580"/>
+          <g class="wave-arm wave-arm--small">
+            <line x1="-14" y1="22" x2="-28" y2="0" stroke="#F2D5C4" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="-30" cy="-2" r="5" fill="#F2D5C4"/>
           </g>
+        </g>
 
-          <!-- Canopy layers (back to front for depth) -->
-          <g class="canopy">
-            <!-- Shadow layer -->
-            <ellipse cx="400" cy="260" rx="260" ry="150" fill="#16523B" opacity="0.3" class="canopy-layer canopy-layer--shadow"/>
-
-            <!-- Back layer -->
-            <ellipse cx="320" cy="220" rx="160" ry="120" fill="#16523B" class="canopy-layer canopy-layer--1"/>
-            <ellipse cx="500" cy="230" rx="150" ry="110" fill="#16523B" class="canopy-layer canopy-layer--2"/>
-            <ellipse cx="400" cy="200" rx="140" ry="100" fill="#1B5E43" class="canopy-layer canopy-layer--3"/>
-
-            <!-- Mid layer -->
-            <ellipse cx="280" cy="200" rx="120" ry="90" fill="#1B5E43" class="canopy-layer canopy-layer--4"/>
-            <ellipse cx="520" cy="210" rx="120" ry="85" fill="#1B5E43" class="canopy-layer canopy-layer--5"/>
-
-            <!-- Front layer -->
-            <ellipse cx="350" cy="190" rx="130" ry="95" fill="#74B49B" opacity="0.7" class="canopy-layer canopy-layer--6"/>
-            <ellipse cx="460" cy="195" rx="120" ry="88" fill="#74B49B" opacity="0.6" class="canopy-layer canopy-layer--7"/>
-            <ellipse cx="400" cy="180" rx="100" ry="75" fill="#74B49B" opacity="0.5" class="canopy-layer canopy-layer--8"/>
-
-            <!-- Light dapples -->
-            <circle cx="300" cy="170" r="15" fill="#E8A838" opacity="0.15" class="dapple"/>
-            <circle cx="450" cy="160" r="12" fill="#E8A838" opacity="0.12" class="dapple"/>
-            <circle cx="380" cy="200" r="18" fill="#E8A838" opacity="0.1" class="dapple"/>
-            <circle cx="500" cy="190" r="10" fill="#E8A838" opacity="0.15" class="dapple"/>
-            <circle cx="260" cy="210" r="14" fill="#E8A838" opacity="0.08" class="dapple"/>
+        <!-- Girl with tablet (front-right) -->
+        <g class="char char--child2" transform="translate(900, 495)">
+          <rect x="-13" y="13" width="26" height="38" rx="9" fill="#D4654A"/>
+          <circle cx="0" cy="0" r="18" fill="#D4A574"/>
+          <path d="M-12 -5 Q-10 -16 0 -16 Q10 -16 12 -5 L12 -2 Q8 2 0 2 Q-8 2 -12 -2 Z" fill="#2A1810"/>
+          <circle cx="-5" cy="0" r="2.2" fill="#2A3130"/>
+          <circle cx="5" cy="0" r="2.2" fill="#2A3130"/>
+          <circle cx="-4" cy="0.5" r="0.7" fill="white"/>
+          <circle cx="6" cy="0.5" r="0.7" fill="white"/>
+          <path d="M-3.5 6 Q0 10 3.5 6" fill="#D4654A" opacity="0.8"/>
+          <rect x="-5" y="51" width="6" height="28" rx="3" fill="#2A3130"/>
+          <rect x="-1" y="51" width="6" height="28" rx="3" fill="#3A4140"/>
+          <rect x="-20" y="22" width="14" height="20" rx="3" fill="#7A8580"/>
+          <rect x="-19" y="23" width="12" height="16" rx="2" fill="#B8D4E3"/>
+          <g class="wave-arm wave-arm--delay2">
+            <line x1="13" y1="20" x2="28" y2="-5" stroke="#D4A574" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="30" cy="-7" r="5" fill="#D4A574"/>
           </g>
+        </g>
 
-          <!-- Leaves falling -->
-          <g class="falling-leaves">
-            <ellipse cx="200" cy="100" rx="4" ry="2" fill="#74B49B" opacity="0.6" class="leaf leaf--1"/>
-            <ellipse cx="550" cy="80" rx="3" ry="1.5" fill="#1B5E43" opacity="0.5" class="leaf leaf--2"/>
-            <ellipse cx="350" cy="60" rx="3.5" ry="2" fill="#E8A838" opacity="0.4" class="leaf leaf--3"/>
-            <ellipse cx="650" cy="120" rx="3" ry="1.5" fill="#74B49B" opacity="0.5" class="leaf leaf--4"/>
-            <ellipse cx="150" cy="200" rx="4" ry="2" fill="#1B5E43" opacity="0.4" class="leaf leaf--5"/>
+        <!-- Toddler (center-front) -->
+        <g class="char char--toddler" transform="translate(600, 510)">
+          <rect x="-10" y="12" width="20" height="30" rx="8" fill="#E8A838"/>
+          <circle cx="0" cy="0" r="16" fill="#F2D5C4"/>
+          <path d="M-8 -6 Q0 -14 8 -6" fill="#D4A574"/>
+          <circle cx="-4.5" cy="0" r="2.5" fill="#2A3130"/>
+          <circle cx="4.5" cy="0" r="2.5" fill="#2A3130"/>
+          <circle cx="-3.5" cy="0.5" r="0.8" fill="white"/>
+          <circle cx="5.5" cy="0.5" r="0.8" fill="white"/>
+          <path d="M-4 6 Q0 12 4 6" fill="#D4654A"/>
+          <path d="M-3 7 Q0 10 3 7" fill="white" opacity="0.9"/>
+          <rect x="-4" y="42" width="5" height="22" rx="2.5" fill="#2A3130"/>
+          <rect x="-1" y="42" width="5" height="22" rx="2.5" fill="#3A4140"/>
+          <g class="wave-arm wave-arm--both">
+            <line x1="-10" y1="18" x2="-22" y2="-5" stroke="#F2D5C4" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="-24" cy="-7" r="4.5" fill="#F2D5C4"/>
+            <line x1="10" y1="18" x2="22" y2="-5" stroke="#F2D5C4" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="24" cy="-7" r="4.5" fill="#F2D5C4"/>
           </g>
+        </g>
 
-          <!-- Bird on branch -->
-          <g class="bird" transform="translate(520, 150)">
-            <ellipse cx="0" cy="0" rx="8" ry="6" fill="#E8A838"/>
-            <circle cx="-6" cy="-3" r="4" fill="#E8A838"/>
-            <circle cx="-7" cy="-4" r="1.2" fill="#2A3130"/>
-            <path d="M-10 -3 L-14 -2 L-10 -1" fill="#D4654A"/>
-            <path d="M5 2 L12 -1 L10 3" fill="#A0845C"/>
-            <line x1="-2" y1="6" x2="-3" y2="10" stroke="#7A8580" stroke-width="1"/>
-            <line x1="2" y1="6" x2="1" y2="10" stroke="#7A8580" stroke-width="1"/>
+        <!-- Grandparent left -->
+        <g class="char char--extra" transform="translate(150, 490)">
+          <rect x="-12" y="14" width="24" height="42" rx="8" fill="#74B49B" opacity="0.8"/>
+          <circle cx="0" cy="0" r="16" fill="#F2D5C4"/>
+          <path d="M-8 -6 Q0 -12 8 -6" fill="#C0C0C0"/>
+          <circle cx="-4" cy="0" r="2" fill="#2A3130"/>
+          <circle cx="4" cy="0" r="2" fill="#2A3130"/>
+          <path d="M-3 6 Q0 10 3 6" fill="#D4654A" opacity="0.7"/>
+          <g class="wave-arm wave-arm--slow">
+            <line x1="12" y1="20" x2="24" y2="0" stroke="#F2D5C4" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="26" cy="-2" r="4" fill="#F2D5C4"/>
           </g>
+        </g>
 
-          <!-- Clickable nav icons on the canopy -->
-          <g class="canopy-icons">
-            <!-- Features icon -->
-            <a href="#features" class="canopy-icon" aria-label="Features">
-              <g transform="translate(260, 165)">
-                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
-                <path d="M-8 -6 L0 -10 L8 -6 L8 6 L0 10 L-8 6 Z" fill="none" stroke="#1B5E43" stroke-width="1.8"/>
-                <circle r="3" fill="#E8A838"/>
-              </g>
-            </a>
-
-            <!-- How It Works icon -->
-            <a href="#how-it-works" class="canopy-icon" aria-label="How It Works">
-              <g transform="translate(340, 135)">
-                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
-                <path d="M-6 -3 L-2 -7 L6 1 L2 5 Z" fill="none" stroke="#1B5E43" stroke-width="1.8"/>
-                <circle cx="-6" cy="5" r="4" fill="none" stroke="#E8A838" stroke-width="1.5"/>
-              </g>
-            </a>
-
-            <!-- Pricing icon -->
-            <a href="#pricing" class="canopy-icon" aria-label="Pricing">
-              <g transform="translate(430, 130)">
-                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
-                <text x="0" y="5" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="16" fill="#1B5E43">$</text>
-              </g>
-            </a>
-
-            <!-- Testimonials icon -->
-            <a href="#testimonials" class="canopy-icon" aria-label="Testimonials">
-              <g transform="translate(510, 155)">
-                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
-                <path d="M-8 -4 Q-8 -8 -4 -8 L4 -8 Q8 -8 8 -4 L8 2 Q8 6 4 6 L0 6 L-4 10 L-3 6 L-4 6 Q-8 6 -8 2 Z" fill="none" stroke="#1B5E43" stroke-width="1.5"/>
-                <circle cx="-3" cy="-1" r="1" fill="#E8A838"/>
-                <circle cx="1" cy="-1" r="1" fill="#E8A838"/>
-                <circle cx="5" cy="-1" r="1" fill="#E8A838"/>
-              </g>
-            </a>
-
-            <!-- Download icon -->
-            <a href="#download" class="canopy-icon" aria-label="Download">
-              <g transform="translate(400, 105)">
-                <circle r="22" fill="white" opacity="0.9" class="icon-bg"/>
-                <path d="M0 -7 L0 4 M-5 0 L0 5 L5 0" stroke="#1B5E43" stroke-width="2" fill="none" stroke-linecap="round"/>
-                <line x1="-6" y1="8" x2="6" y2="8" stroke="#1B5E43" stroke-width="2" stroke-linecap="round"/>
-              </g>
-            </a>
+        <!-- Teen right -->
+        <g class="char char--extra2" transform="translate(1050, 475)">
+          <rect x="-14" y="16" width="28" height="48" rx="10" fill="#1B5E43"/>
+          <circle cx="0" cy="0" r="18" fill="#D4A574"/>
+          <path d="M-10 -6 Q0 -16 10 -6 Q10 -3 8 0 L-8 0 Q-10 -3 -10 -6" fill="#2A1810"/>
+          <circle cx="-5" cy="1" r="2.2" fill="#2A3130"/>
+          <circle cx="5" cy="1" r="2.2" fill="#2A3130"/>
+          <path d="M-3 8 Q0 12 3 8" fill="#D4654A" opacity="0.8"/>
+          <rect x="-5" y="64" width="7" height="32" rx="3" fill="#2A3130"/>
+          <rect x="-2" y="64" width="7" height="32" rx="3" fill="#3A4140"/>
+          <g class="wave-arm wave-arm--teen">
+            <line x1="-14" y1="24" x2="-30" y2="0" stroke="#D4A574" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="-32" cy="-2" r="4.5" fill="#D4A574"/>
           </g>
+        </g>
 
-          <!-- Family scene under tree -->
-          <g class="family-scene">
-            <!-- Parent (standing, happy) -->
-            <g class="parent" transform="translate(440, 540)">
-              <circle cx="0" cy="-35" r="14" fill="#F2D5C4"/>
-              <path d="M-5 -45 Q0 -52 5 -45 Q8 -42 5 -40 Q0 -38 -5 -40 Q-8 -42 -5 -45" fill="#5A3825"/>
-              <circle cx="-4" cy="-37" r="1.5" fill="#2A3130"/>
-              <circle cx="4" cy="-37" r="1.5" fill="#2A3130"/>
-              <path d="M-3 -30 Q0 -27 3 -30" stroke="#D4654A" stroke-width="1.2" fill="none"/>
-              <rect x="-12" y="-20" width="24" height="35" rx="8" fill="#1B5E43"/>
-              <rect x="-6" y="15" width="5" height="25" rx="2" fill="#2A3130" opacity="0.8"/>
-              <rect x="1" y="15" width="5" height="25" rx="2" fill="#2A3130" opacity="0.8"/>
-              <line x1="12" y1="-10" x2="22" y2="5" stroke="#F2D5C4" stroke-width="4" stroke-linecap="round"/>
-            </g>
+        <!-- Dog near toddler -->
+        <g class="char char--pet" transform="translate(680, 560)">
+          <ellipse cx="0" cy="0" rx="18" ry="12" fill="#D4A574"/>
+          <circle cx="-14" cy="-8" r="10" fill="#D4A574"/>
+          <circle cx="-17" cy="-11" r="3" fill="#2A3130"/>
+          <circle cx="-16" cy="-10.5" r="1" fill="white"/>
+          <ellipse cx="-14" cy="-4" rx="4" ry="2.5" fill="#2A3130" opacity="0.6"/>
+          <ellipse cx="-20" cy="-14" rx="5" ry="8" fill="#C4956A" transform="rotate(-15 -20 -14)"/>
+          <ellipse cx="-8" cy="-14" rx="5" ry="8" fill="#C4956A" transform="rotate(15 -8 -14)"/>
+          <path d="M15 -2 Q22 -8 20 2 Q18 8 14 4" fill="#D4A574"/>
+          <rect x="-10" y="10" width="5" height="12" rx="2.5" fill="#C4956A"/>
+          <rect x="-3" y="10" width="5" height="12" rx="2.5" fill="#C4956A"/>
+          <rect x="4" y="10" width="5" height="12" rx="2.5" fill="#C4956A"/>
+          <rect x="10" y="10" width="5" height="12" rx="2.5" fill="#C4956A"/>
+        </g>
 
-            <!-- Child with laptop -->
-            <g class="child child--laptop" transform="translate(300, 580)">
-              <circle cx="0" cy="-22" r="10" fill="#F2D5C4"/>
-              <path d="M-4 -29 Q0 -34 4 -29" fill="#8B5E3C"/>
-              <circle cx="-3" cy="-24" r="1.2" fill="#2A3130"/>
-              <circle cx="3" cy="-24" r="1.2" fill="#2A3130"/>
-              <path d="M-2 -19 Q0 -17 2 -19" stroke="#D4654A" stroke-width="0.8" fill="none"/>
-              <rect x="-10" y="-12" width="20" height="22" rx="6" fill="#E8A838"/>
-              <rect x="-4" y="10" width="4" height="15" rx="2" fill="#2A3130" opacity="0.7"/>
-              <rect x="0" y="10" width="4" height="15" rx="2" fill="#2A3130" opacity="0.7"/>
-              <!-- Laptop -->
-              <rect x="-15" y="0" width="18" height="12" rx="2" fill="#7A8580"/>
-              <rect x="-14" y="1" width="16" height="9" rx="1" fill="#B8D4E3"/>
-              <rect x="-18" y="12" width="24" height="2" rx="1" fill="#7A8580"/>
-            </g>
-
-            <!-- Child with tablet -->
-            <g class="child child--tablet" transform="translate(500, 590)">
-              <circle cx="0" cy="-18" r="9" fill="#F2D5C4"/>
-              <path d="M-3 -24 Q0 -28 3 -24" fill="#D4A574"/>
-              <circle cx="-2.5" cy="-20" r="1" fill="#2A3130"/>
-              <circle cx="2.5" cy="-20" r="1" fill="#2A3130"/>
-              <path d="M-1.5 -16 Q0 -14.5 1.5 -16" stroke="#D4654A" stroke-width="0.7" fill="none"/>
-              <rect x="-8" y="-9" width="16" height="18" rx="5" fill="#74B49B"/>
-              <rect x="-3" y="9" width="3" height="12" rx="1.5" fill="#2A3130" opacity="0.7"/>
-              <rect x="0" y="9" width="3" height="12" rx="1.5" fill="#2A3130" opacity="0.7"/>
-              <!-- Tablet -->
-              <rect x="5" y="-8" width="10" height="14" rx="2" fill="#7A8580"/>
-              <rect x="6" y="-7" width="8" height="11" rx="1" fill="#B8D4E3"/>
-            </g>
-          </g>
-
-          <!-- Floating particles -->
-          <g class="particles">
-            <circle cx="180" cy="300" r="2" fill="#E8A838" opacity="0.4" class="particle particle--1"/>
-            <circle cx="620" cy="350" r="1.5" fill="#74B49B" opacity="0.3" class="particle particle--2"/>
-            <circle cx="300" cy="400" r="2.5" fill="#E8A838" opacity="0.3" class="particle particle--3"/>
-            <circle cx="500" cy="320" r="1.5" fill="#74B49B" opacity="0.4" class="particle particle--4"/>
-            <circle cx="700" cy="250" r="2" fill="#E8A838" opacity="0.25" class="particle particle--5"/>
-            <circle cx="100" cy="380" r="2" fill="#1B5E43" opacity="0.2" class="particle particle--6"/>
-          </g>
-        </svg>
-      </div>
+        <!-- Grass/ground tufts -->
+        <g opacity="0.3">
+          <ellipse cx="200" cy="600" rx="100" ry="10" fill="#74B49B"/>
+          <ellipse cx="600" cy="610" rx="160" ry="12" fill="#74B49B"/>
+          <ellipse cx="1000" cy="605" rx="120" ry="10" fill="#74B49B"/>
+        </g>
+      </svg>
     </div>
 
-    <!-- Scroll indicator -->
-    <div class="hero__scroll" aria-hidden="true">
-      <div class="hero__scroll-line"></div>
-      <span>Scroll to explore</span>
+    <!-- Scroll chevron -->
+    <div class="hero__scroll">
+      <div class="hero__scroll-bounce">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M7 10l5 5 5-5"/></svg>
+      </div>
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- ====================================
+       FEATURES — Playful cards
+       ==================================== -->
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Features</span>
-        <h2>Everything growing families need</h2>
-        <p>Canopy gives you gentle oversight without being intrusive. Know what matters, guide when needed, and let your family thrive.</p>
+        <span class="section-label">What Canopy Does</span>
+        <h2>Superpowers for parents</h2>
+        <p>Think of Canopy as a gentle guardian — always watching, never intrusive. Here's what it gives your family.</p>
       </div>
 
       <div class="features__grid">
-        <div class="feature-card" data-aos="fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
-              <path d="M16 18 L24 14 L32 18 L32 30 L24 34 L16 30 Z" fill="none" stroke="#1B5E43" stroke-width="2"/>
-              <circle cx="24" cy="24" r="4" fill="#E8A838"/>
-            </svg>
-          </div>
+        <div class="feature-card">
+          <div class="feature-card__emoji">&#x1F50D;</div>
           <h3>Activity Monitoring</h3>
-          <p>See which apps and websites your children use most. Understand their digital world with clear, friendly reports — not surveillance, just awareness.</p>
+          <p>See which apps and websites your children use. Clear, friendly reports — not surveillance, just awareness.</p>
         </div>
 
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
-              <circle cx="24" cy="24" r="10" fill="none" stroke="#1B5E43" stroke-width="2"/>
-              <path d="M24 16 L24 24 L30 28" fill="none" stroke="#E8A838" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
+        <div class="feature-card">
+          <div class="feature-card__emoji">&#x23F0;</div>
           <h3>Screen Time Balance</h3>
-          <p>Set healthy boundaries for daily screen time. Create schedules that work for your family — homework first, then play, then wind-down.</p>
+          <p>Set healthy boundaries. Homework first, then play, then wind-down. Schedules that flex for weekends.</p>
         </div>
 
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
-              <rect x="16" y="16" width="16" height="16" rx="3" fill="none" stroke="#1B5E43" stroke-width="2"/>
-              <path d="M20 24 L23 27 L28 21" stroke="#E8A838" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+        <div class="feature-card">
+          <div class="feature-card__emoji">&#x1F6E1;</div>
           <h3>Content Filtering</h3>
-          <p>Block harmful content before it reaches your child. Age-appropriate filters that protect without over-restricting — they can always ask for access.</p>
+          <p>Block harmful content before it arrives. Age-appropriate filters — and kids can always ask for access.</p>
         </div>
 
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
-              <circle cx="24" cy="22" r="6" fill="none" stroke="#1B5E43" stroke-width="2"/>
-              <path d="M24 28 L24 34" stroke="#1B5E43" stroke-width="2"/>
-              <path d="M18 34 L30 34" stroke="#E8A838" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
+        <div class="feature-card">
+          <div class="feature-card__emoji">&#x1F4CD;</div>
           <h3>Location Awareness</h3>
-          <p>Know where your children are without constant check-ins. Get gentle alerts when they arrive at or leave familiar places like school or home.</p>
+          <p>Know where your children are without constant check-ins. Gentle alerts for school, home, and more.</p>
         </div>
 
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
-              <path d="M18 20 Q18 16 22 16 L26 16 Q30 16 30 20 L30 24 Q30 28 26 28 L22 28 Q18 28 18 24 Z" fill="none" stroke="#1B5E43" stroke-width="2"/>
-              <circle cx="22" cy="22" r="1.5" fill="#E8A838"/>
-              <circle cx="26" cy="22" r="1.5" fill="#E8A838"/>
-              <path d="M22 32 L20 36" stroke="#1B5E43" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
+        <div class="feature-card">
+          <div class="feature-card__emoji">&#x1F514;</div>
           <h3>Smart Alerts</h3>
-          <p>Receive warm, context-aware notifications. "Emma wants more time on art class" — not alarming warnings, just helpful nudges to guide decisions.</p>
+          <p>"Emma wants more time on art class" — warm nudges, not alarming warnings. You decide what happens next.</p>
         </div>
 
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 48 48" width="48" height="48">
-              <circle cx="24" cy="24" r="22" fill="#F6F4EF"/>
-              <rect x="16" y="18" width="16" height="12" rx="2" fill="none" stroke="#1B5E43" stroke-width="2"/>
-              <line x1="16" y1="22" x2="32" y2="22" stroke="#1B5E43" stroke-width="1.5"/>
-              <rect x="18" y="24" width="4" height="3" rx="0.5" fill="#E8A838"/>
-              <rect x="24" y="24" width="4" height="3" rx="0.5" fill="#74B49B"/>
-            </svg>
-          </div>
+        <div class="feature-card">
+          <div class="feature-card__emoji">&#x1F4C5;</div>
           <h3>Schedule Builder</h3>
-          <p>Create custom daily schedules for each child. Bedtime mode, homework time, free time — each with its own rules. Flexible for weekends and holidays.</p>
+          <p>Bedtime mode, homework time, free time — each with its own rules. Custom schedules for every child.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works Section -->
+  <!-- ====================================
+       HOW IT WORKS
+       ==================================== -->
   <section class="how-it-works" id="how-it-works">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">How It Works</span>
-        <h2>Three steps to peace of mind</h2>
-        <p>Setting up Canopy takes less than five minutes. Here's how your family gets started.</p>
+      <div class="section-header section-header--light">
+        <span class="section-label section-label--light">How It Works</span>
+        <h2>Up and running in 5 minutes</h2>
+        <p>Three simple steps. No tech degree required.</p>
       </div>
 
       <div class="steps">
-        <div class="step" data-aos="fade-right">
-          <div class="step__number">1</div>
-          <div class="step__content">
-            <h3>Create your family</h3>
-            <p>Sign up for a free account and add each family member. Give everyone a name, a profile color, and a role — parent or child.</p>
+        <div class="step">
+          <div class="step__icon-wrap">
+            <div class="step__number">1</div>
+            <span class="step__emoji">&#x1F46A;</span>
           </div>
-          <div class="step__visual">
-            <svg viewBox="0 0 200 160" width="200" height="160">
-              <rect x="30" y="20" width="140" height="120" rx="12" fill="#F6F4EF" stroke="#74B49B" stroke-width="2"/>
-              <circle cx="80" cy="65" r="15" fill="#1B5E43"/>
-              <text x="80" y="70" text-anchor="middle" fill="white" font-family="Outfit" font-weight="700" font-size="14">T</text>
-              <circle cx="120" cy="65" r="15" fill="#E8A838"/>
-              <text x="120" y="70" text-anchor="middle" fill="white" font-family="Outfit" font-weight="700" font-size="14">E</text>
-              <circle cx="100" cy="100" r="12" fill="#74B49B"/>
-              <text x="100" y="105" text-anchor="middle" fill="white" font-family="Outfit" font-weight="700" font-size="12">L</text>
-              <text x="100" y="125" text-anchor="middle" fill="#7A8580" font-family="Nunito Sans" font-size="9">Your Family</text>
-            </svg>
-          </div>
+          <h3>Create your family</h3>
+          <p>Sign up free. Add each family member with a name, profile color, and role.</p>
         </div>
 
-        <div class="step" data-aos="fade-left">
-          <div class="step__number">2</div>
-          <div class="step__content">
-            <h3>Install on devices</h3>
-            <p>Add the lightweight Canopy agent to your children's Mac. It runs quietly in the background — no slowdowns, no pop-ups, just protection.</p>
+        <div class="step__connector"></div>
+
+        <div class="step">
+          <div class="step__icon-wrap">
+            <div class="step__number">2</div>
+            <span class="step__emoji">&#x1F4BB;</span>
           </div>
-          <div class="step__visual">
-            <svg viewBox="0 0 200 160" width="200" height="160">
-              <rect x="40" y="25" width="120" height="80" rx="8" fill="#F6F4EF" stroke="#74B49B" stroke-width="2"/>
-              <rect x="42" y="27" width="116" height="60" rx="6" fill="#E2DED8"/>
-              <rect x="70" y="105" width="60" height="5" rx="2.5" fill="#74B49B"/>
-              <circle cx="100" cy="57" r="18" fill="#1B5E43"/>
-              <path d="M92 57 L98 63 L108 51" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="100" y="125" text-anchor="middle" fill="#7A8580" font-family="Nunito Sans" font-size="9">Protected</text>
-            </svg>
-          </div>
+          <h3>Install the agent</h3>
+          <p>Add Canopy to your child's Mac. Lightweight, invisible, no slowdowns.</p>
         </div>
 
-        <div class="step" data-aos="fade-right">
-          <div class="step__number">3</div>
-          <div class="step__content">
-            <h3>Guide from anywhere</h3>
-            <p>Open the Canopy app on your phone to see activity, adjust schedules, approve requests, and enjoy the calm of knowing your family is safe.</p>
+        <div class="step__connector"></div>
+
+        <div class="step">
+          <div class="step__icon-wrap">
+            <div class="step__number">3</div>
+            <span class="step__emoji">&#x1F4F1;</span>
           </div>
-          <div class="step__visual">
-            <svg viewBox="0 0 200 160" width="200" height="160">
-              <rect x="70" y="15" width="60" height="110" rx="10" fill="#F6F4EF" stroke="#74B49B" stroke-width="2"/>
-              <rect x="74" y="30" width="52" height="80" rx="4" fill="white"/>
-              <circle cx="100" cy="23" r="2" fill="#74B49B"/>
-              <rect x="80" y="38" width="40" height="8" rx="2" fill="#1B5E43" opacity="0.8"/>
-              <rect x="80" y="50" width="35" height="5" rx="1.5" fill="#74B49B" opacity="0.5"/>
-              <rect x="80" y="60" width="40" height="20" rx="4" fill="#F6F4EF"/>
-              <circle cx="90" cy="70" r="5" fill="#E8A838"/>
-              <text x="104" y="68" fill="#2A3130" font-family="Nunito Sans" font-size="6" font-weight="600">Emma</text>
-              <text x="104" y="75" fill="#7A8580" font-family="Nunito Sans" font-size="5">2h 15m today</text>
-              <rect x="80" y="84" width="40" height="20" rx="4" fill="#F6F4EF"/>
-              <circle cx="90" cy="94" r="5" fill="#74B49B"/>
-              <text x="104" y="92" fill="#2A3130" font-family="Nunito Sans" font-size="6" font-weight="600">Liam</text>
-              <text x="104" y="99" fill="#7A8580" font-family="Nunito Sans" font-size="5">45m today</text>
-              <text x="100" y="143" text-anchor="middle" fill="#7A8580" font-family="Nunito Sans" font-size="9">Your dashboard</text>
-            </svg>
-          </div>
+          <h3>Guide from your phone</h3>
+          <p>See activity, adjust schedules, approve requests — all from the Canopy app.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
+  <!-- ====================================
+       PRICING
+       ==================================== -->
   <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Pricing</span>
         <h2>Plans that grow with your family</h2>
-        <p>Start with a free trial. Upgrade when you're ready — no surprises, cancel anytime.</p>
+        <p>Start free. Upgrade when you're ready. Cancel anytime.</p>
       </div>
 
       <div class="pricing__toggle">
@@ -461,18 +520,17 @@
       </div>
 
       <div class="pricing__grid">
-        <div class="pricing-card" data-aos="fade-up">
+        <div class="pricing-card">
           <div class="pricing-card__header">
+            <span class="pricing-card__icon">&#x1F331;</span>
             <h3>Starter</h3>
-            <p class="pricing-card__desc">For one child, one device</p>
+            <p class="pricing-card__desc">1 child, 1 device</p>
           </div>
           <div class="pricing-card__price">
             <span class="pricing-card__amount" data-monthly="2.99" data-yearly="24.99">$2.99</span>
             <span class="pricing-card__period">/mo</span>
           </div>
           <ul class="pricing-card__features">
-            <li>1 child profile</li>
-            <li>1 device</li>
             <li>Activity monitoring</li>
             <li>Basic screen time limits</li>
             <li>Content filtering</li>
@@ -480,19 +538,18 @@
           <a href="#download" class="btn btn--outline">Start Free Trial</a>
         </div>
 
-        <div class="pricing-card pricing-card--popular" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-card pricing-card--popular">
           <div class="pricing-card__badge">Most Popular</div>
           <div class="pricing-card__header">
+            <span class="pricing-card__icon">&#x1F333;</span>
             <h3>Family</h3>
-            <p class="pricing-card__desc">For families getting started</p>
+            <p class="pricing-card__desc">Up to 3 kids, 3 devices</p>
           </div>
           <div class="pricing-card__price">
             <span class="pricing-card__amount" data-monthly="4.99" data-yearly="41.99">$4.99</span>
             <span class="pricing-card__period">/mo</span>
           </div>
           <ul class="pricing-card__features">
-            <li>Up to 3 child profiles</li>
-            <li>3 devices</li>
             <li>Everything in Starter</li>
             <li>Location awareness</li>
             <li>Schedule builder</li>
@@ -501,18 +558,17 @@
           <a href="#download" class="btn btn--primary">Start Free Trial</a>
         </div>
 
-        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-card">
           <div class="pricing-card__header">
+            <span class="pricing-card__icon">&#x1F332;</span>
             <h3>Family+</h3>
-            <p class="pricing-card__desc">For larger families</p>
+            <p class="pricing-card__desc">Up to 6 kids, 6 devices</p>
           </div>
           <div class="pricing-card__price">
             <span class="pricing-card__amount" data-monthly="7.99" data-yearly="67.99">$7.99</span>
             <span class="pricing-card__period">/mo</span>
           </div>
           <ul class="pricing-card__features">
-            <li>Up to 6 child profiles</li>
-            <li>6 devices</li>
             <li>Everything in Family</li>
             <li>Priority support</li>
             <li>Advanced reports</li>
@@ -520,18 +576,17 @@
           <a href="#download" class="btn btn--outline">Start Free Trial</a>
         </div>
 
-        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="pricing-card">
           <div class="pricing-card__header">
+            <span class="pricing-card__icon">&#x1F3D4;</span>
             <h3>Mega Family</h3>
-            <p class="pricing-card__desc">For the biggest families</p>
+            <p class="pricing-card__desc">Up to 10 kids, 10 devices</p>
           </div>
           <div class="pricing-card__price">
             <span class="pricing-card__amount" data-monthly="9.99" data-yearly="83.99">$9.99</span>
             <span class="pricing-card__period">/mo</span>
           </div>
           <ul class="pricing-card__features">
-            <li>Up to 10 child profiles</li>
-            <li>10 devices</li>
             <li>Everything in Family+</li>
             <li>Admin dashboard</li>
             <li>Multi-parent controls</li>
@@ -543,63 +598,65 @@
       <div class="pricing__institutional">
         <div class="pricing__institutional-inner">
           <div>
-            <h3>For Schools &amp; Institutions</h3>
-            <p>Protect every student with Canopy's institutional plan — just <strong>$1.99 per student/month</strong>. Bulk licensing, admin dashboards, and dedicated support.</p>
+            <h3>&#x1F3EB; For Schools &amp; Institutions</h3>
+            <p>Protect every student — just <strong>$1.99/student/month</strong>. Bulk licensing, admin dashboard, dedicated support.</p>
           </div>
-          <a href="#download" class="btn btn--primary">Contact Sales</a>
+          <a href="#download" class="btn btn--hero-dark">Contact Sales</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- ====================================
+       TESTIMONIALS
+       ==================================== -->
   <section class="testimonials" id="testimonials">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Stories</span>
+        <span class="section-label">Real Stories</span>
         <h2>Families who found their calm</h2>
-        <p>Real parents, real peace of mind. Here's what families say about life under the canopy.</p>
+        <p>Real parents. Real peace of mind.</p>
       </div>
 
       <div class="testimonials__grid">
-        <div class="testimonial-card" data-aos="fade-up">
-          <div class="testimonial-card__stars">★★★★★</div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
           <blockquote>
-            <p>"I used to check my daughter's laptop every night before bed. Now I just glance at the Canopy app over coffee. The reports are clear, the alerts are helpful, and I actually sleep better."</p>
+            <p>"I used to check my daughter's laptop every night. Now I just glance at the Canopy app over coffee. I actually sleep better."</p>
           </blockquote>
           <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background-color: #1B5E43;">S</div>
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #1B5E43, #74B49B);">S</div>
             <div>
               <strong>Sarah M.</strong>
-              <span>Mom of 2 · Portland, OR</span>
+              <span>Mom of 2 &middot; Portland, OR</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="testimonial-card__stars">★★★★★</div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
           <blockquote>
-            <p>"What I love most is the tone. When my son hits his screen time limit, the message is kind — 'Time for a break, Liam!' — not 'ACCESS DENIED.' He actually responds well to it."</p>
+            <p>"The tone is what sold me. When my son hits his limit, it says 'Time for a break, Liam!' — not 'ACCESS DENIED.' He actually listens."</p>
           </blockquote>
           <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background-color: #E8A838;">D</div>
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #E8A838, #D4654A);">D</div>
             <div>
               <strong>David K.</strong>
-              <span>Dad of 3 · Austin, TX</span>
+              <span>Dad of 3 &middot; Austin, TX</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="testimonial-card__stars">★★★★★</div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
           <blockquote>
-            <p>"We adopted Canopy for our whole school. The admin dashboard makes it easy to manage 200+ students, and parents love being able to extend protection at home too."</p>
+            <p>"We rolled Canopy out to 200+ students. The admin dashboard is a dream, and parents love extending protection at home."</p>
           </blockquote>
           <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background-color: #74B49B;">R</div>
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #74B49B, #1B5E43);">R</div>
             <div>
               <strong>Rachel T.</strong>
-              <span>IT Director · Lincoln Academy</span>
+              <span>IT Director &middot; Lincoln Academy</span>
             </div>
           </div>
         </div>
@@ -607,32 +664,20 @@
     </div>
   </section>
 
-  <!-- CTA / Download Section -->
+  <!-- ====================================
+       CTA / DOWNLOAD
+       ==================================== -->
   <section class="download" id="download">
     <div class="container">
       <div class="download__inner">
-        <div class="download__tree" aria-hidden="true">
-          <svg viewBox="0 0 120 160" width="120" height="160">
-            <ellipse cx="60" cy="50" rx="50" ry="40" fill="#1B5E43" opacity="0.9"/>
-            <ellipse cx="45" cy="45" rx="35" ry="30" fill="#74B49B" opacity="0.7"/>
-            <ellipse cx="75" cy="45" rx="35" ry="30" fill="#74B49B" opacity="0.6"/>
-            <ellipse cx="60" cy="40" rx="25" ry="22" fill="#1B5E43" opacity="0.6"/>
-            <rect x="56" y="80" width="8" height="40" rx="4" fill="#A0845C"/>
-            <circle cx="60" cy="115" r="6" fill="#E8A838" opacity="0.5"/>
-          </svg>
-        </div>
         <h2>Ready to shelter your family?</h2>
-        <p>Start your free 14-day trial today. No credit card needed. Set up in under 5 minutes.</p>
+        <p>Free 14-day trial. No credit card needed. Set up in under 5 minutes.</p>
         <div class="download__actions">
-          <a href="#" class="btn btn--primary btn--lg">Download for macOS</a>
-          <a href="#" class="btn btn--ghost btn--lg">Get the Mobile App</a>
-        </div>
-        <div class="download__platforms">
-          <span>Available on</span>
-          <div class="download__platform-icons">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="#7A8580"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z"/></svg>
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="#7A8580"><path d="M17.523 2.789l-5.524 9.6 5.524 9.611H6.477L1 12.389l5.477-9.6h11.046zM7.71 4.789L3.688 12.389l4.023 7.611h8.58l-4.023-7.611L16.29 4.789H7.71z"/></svg>
-          </div>
+          <a href="#" class="btn btn--hero btn--xl">
+            Download for macOS
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.81-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z"/></svg>
+          </a>
+          <a href="#" class="btn btn--outline-light btn--xl">Get the Mobile App</a>
         </div>
       </div>
     </div>
@@ -645,16 +690,15 @@
         <div class="footer__brand">
           <a href="#" class="nav__logo">
             <svg class="nav__logo-icon" viewBox="0 0 40 40" width="32" height="32">
-              <circle cx="20" cy="14" r="12" fill="#1B5E43"/>
-              <circle cx="14" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
-              <circle cx="26" cy="12" r="8" fill="#74B49B" opacity="0.9"/>
-              <circle cx="20" cy="10" r="6" fill="#1B5E43" opacity="0.7"/>
+              <circle cx="20" cy="14" r="12" fill="#74B49B"/>
+              <circle cx="14" cy="12" r="8" fill="#74B49B" opacity="0.6"/>
+              <circle cx="26" cy="12" r="8" fill="#74B49B" opacity="0.6"/>
               <rect x="18.5" y="22" width="3" height="10" rx="1.5" fill="#A0845C"/>
               <circle cx="20" cy="30" r="2.5" fill="#E8A838" opacity="0.8"/>
             </svg>
-            <span class="nav__wordmark">canopy</span>
+            <span class="nav__wordmark nav__wordmark--footer">canopy</span>
           </a>
-          <p>Digital safety for growing families. Shelter, guide, grow.</p>
+          <p>Digital safety for growing families.<br>Shelter, guide, grow.</p>
         </div>
         <div class="footer__links">
           <h4>Product</h4>
@@ -691,5 +735,74 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!--
+    ==========================================
+    IMAGE GENERATION PROMPTS (for Nano Banana)
+    ==========================================
+
+    HERO IMAGE (MOST IMPORTANT — the centerpiece of the whole site):
+
+    The hero needs TWO images that work together:
+    1. A MASSIVE magical canopy tree with floating icon bubbles in its foliage
+    2. A crowd of family characters standing under/in front of the tree
+
+    PROMPT 1 — Giant Canopy Tree with Floating Icons (1600x1000px, transparent PNG):
+    "A massive, magical canopy tree filling most of the frame, Disney Pixar 3D style.
+    The tree has a thick, warm brown trunk with visible roots at the bottom, and huge
+    spreading branches. The canopy is ENORMOUS — lush, layered, multi-toned green foliage
+    (deep forest green #1B5E43, sage green #74B49B, bright highlights #9DD4BB) with
+    golden dappled sunlight (#E8A838) filtering through gaps in the leaves.
+    Floating INSIDE the canopy foliage are 5 glossy white pill-shaped icon bubbles,
+    each with a small green icon and a text label: a shield icon labeled 'Protection',
+    a clock icon labeled 'Screen Time', a monitor icon labeled 'Activity',
+    a map pin labeled 'Location', and a bell labeled 'Alerts'. The bubbles glow
+    softly and float at different heights within the canopy.
+    A wooden swing hangs from one branch. A colorful bird perches on another.
+    Small golden sparkles and fireflies float around the tree.
+    Warm magical studio lighting, TRANSPARENT BACKGROUND. High quality 3D render."
+
+    PROMPT 2 — Hero Family Crowd (1600x600px, transparent PNG):
+    "A group of 15-20 diverse, happy 3D animated characters in Disney Pixar style,
+    standing together as a crowd facing the camera, waving and cheering with arms raised.
+    The group includes parents, children of various ages (toddlers, kids, teens), and
+    grandparents. Some children are holding laptops and tablets. There is a golden retriever
+    dog in front. Characters wear colorful casual clothing in forest green (#1B5E43),
+    sage green (#74B49B), golden yellow (#E8A838), coral (#D4654A), and warm earth tones.
+    Everyone is smiling with big expressive eyes and warm friendly expressions.
+    The characters have rounded, stylized proportions like a Pixar movie poster.
+    TRANSPARENT BACKGROUND — no ground, no scenery, just the character group.
+    High quality 3D render, soft studio lighting, vibrant colors."
+
+    PROMPT 3 — Combined Hero Scene (alternative single image, 1600x1000px, transparent PNG):
+    "A massive magical canopy tree with a crowd of 15-20 diverse, happy 3D animated
+    characters (Disney Pixar style) standing underneath it, waving at the camera.
+    The tree's enormous lush green canopy (forest green, sage green, golden highlights)
+    fills the top 60% of the frame. Floating inside the canopy are 5 glossy white
+    pill-shaped bubbles with small icons (shield, clock, monitor, map pin, bell).
+    A wooden swing hangs from one branch, a bird perches on another. Golden sparkles
+    and dappled sunlight filter through the leaves.
+    The family group below includes parents, kids with laptops/tablets, toddlers,
+    teens, grandparents, and a golden retriever. Everyone wears colorful clothing
+    in the brand colors (forest green, sage, golden yellow, coral). Big smiles,
+    rounded proportions, warm expressions. TRANSPARENT BACKGROUND.
+    High quality 3D render, warm magical studio lighting, vibrant."
+
+    PROMPT 4 — Feature Icons (set of 6, 256x256px each):
+    "Set of 6 glossy 3D icons in Disney Pixar style on transparent backgrounds:
+    (1) A cute shield with an eye symbol — for 'Activity Monitoring',
+    (2) A friendly alarm clock with green/gold colors — for 'Screen Time',
+    (3) A playful filter/funnel with a checkmark — for 'Content Filtering',
+    (4) A warm map pin with a heart — for 'Location Awareness',
+    (5) A cheerful notification bell with sparkles — for 'Smart Alerts',
+    (6) A colorful calendar with a sun symbol — for 'Schedule Builder'.
+    Each icon is rounded, glossy, vibrant, with soft shadows.
+    Colors: forest green, sage green, golden yellow, coral accents."
+
+    USAGE:
+    - Drop hero-family.png into images/ folder
+    - Uncomment the <img> tag in the hero__characters div above
+    - Remove or hide the SVG placeholder
+  -->
 </body>
 </html>

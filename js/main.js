@@ -6,8 +6,7 @@
   'use strict';
 
   // Nav scroll effect
-  const nav = document.getElementById('nav');
-  const heroSection = document.getElementById('hero');
+  var nav = document.getElementById('nav');
 
   function updateNav() {
     if (window.scrollY > 60) {
@@ -20,11 +19,11 @@
   updateNav();
 
   // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
 
   navToggle.addEventListener('click', function () {
-    const isOpen = navLinks.classList.toggle('open');
+    var isOpen = navLinks.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', isOpen);
   });
 
@@ -36,11 +35,11 @@
   });
 
   // Pricing toggle
-  const pricingToggle = document.getElementById('pricingToggle');
-  const priceAmounts = document.querySelectorAll('.pricing-card__amount');
-  const periodLabels = document.querySelectorAll('.pricing-card__period');
-  const toggleLabels = document.querySelectorAll('.pricing__toggle-label');
-  let isYearly = false;
+  var pricingToggle = document.getElementById('pricingToggle');
+  var priceAmounts = document.querySelectorAll('.pricing-card__amount');
+  var periodLabels = document.querySelectorAll('.pricing-card__period');
+  var toggleLabels = document.querySelectorAll('.pricing__toggle-label');
+  var isYearly = false;
 
   pricingToggle.addEventListener('click', function () {
     isYearly = !isYearly;
@@ -83,21 +82,6 @@
     revealObserver.observe(el);
   });
 
-  // Parallax on hero (subtle)
-  var parallaxBg = document.querySelector('.hero__parallax-bg');
-  var heroTree = document.querySelector('.hero__tree');
-
-  window.addEventListener('scroll', function () {
-    var scrolled = window.scrollY;
-    if (scrolled < window.innerHeight) {
-      var rate = scrolled * 0.3;
-      parallaxBg.style.transform = 'translateY(' + rate + 'px)';
-      if (heroTree) {
-        heroTree.style.transform = 'translateY(' + (scrolled * 0.1) + 'px)';
-      }
-    }
-  }, { passive: true });
-
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
@@ -109,13 +93,13 @@
     });
   });
 
-  // Canopy icon tooltips on hover
-  document.querySelectorAll('.canopy-icon').forEach(function (icon) {
-    icon.addEventListener('mouseenter', function () {
-      this.style.filter = 'drop-shadow(0 0 8px rgba(232, 168, 56, 0.4))';
+  // Bubble hover effects
+  document.querySelectorAll('.bubble').forEach(function (bubble) {
+    bubble.addEventListener('mouseenter', function () {
+      this.style.boxShadow = '0 8px 30px rgba(0,0,0,0.25)';
     });
-    icon.addEventListener('mouseleave', function () {
-      this.style.filter = '';
+    bubble.addEventListener('mouseleave', function () {
+      this.style.boxShadow = '';
     });
   });
 })();
